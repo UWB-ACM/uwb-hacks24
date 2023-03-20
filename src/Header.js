@@ -8,7 +8,7 @@ function Header() {
             <nav className="header-nav">
                 <ul>
                     <li><a href="https://www.google.com/">Registration</a></li>
-                    <li><a href="https://www.google.com/">Contact</a></li>
+                    <li><a href="mailto:acmuwbothell@gmail.com?subject=Hackathon" target="_blank">Contact</a></li>
                     <li><a href="https://www.google.com/">FAQ</a></li>
                 </ul>
             </nav>
