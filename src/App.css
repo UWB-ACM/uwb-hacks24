@@ -4,6 +4,7 @@
   align-items: center;
   padding: 20px;
   background-color: #f2f2f2;
+  z-index: 10;
 }
 
 .header-title {
@@ -79,5 +80,48 @@
 .box p {
   font-size: 16px;
   margin-bottom: 0;
+}
+
+.tracks {
+  text-align: center;
+  border: 5px solid;
+  margin: 10px auto auto;
+  width: 50%;
+  padding: 10px;
+  z-index: 190;
+  bottom: 0;
+}
+
+.tracksHeader {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  z-index: 190;
+}
+
+.faq {
+  text-align: center;
+  border: 5px solid;
+  width: 50%;
+  padding: 10px;
+  z-index: 190;
+  bottom: 0;
+  margin: 30px auto auto;
+}
+
+.faqHeader {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  z-index: 190;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -100;
 }
 
