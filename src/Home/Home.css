@@ -20,13 +20,13 @@
   padding: 0;
 }
 
-.header-nav li {
+.header-nav a {
   margin-left: 200px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.header-nav li:first-child {
+.header-nav a:first-child {
   margin-left: 0;
 }
 

@@ -1,29 +1,15 @@
-import './App.css';
-import Header from "./Header";
-import CountdownTimer from "./CountDownTimer";
-import Tracks from "./Tracks";
-import Particles from "react-particles";
-import options from "./particleConfig"; // configuration of particles
-import { loadFull } from "tsparticles";
-import { useCallback } from "react";
-import { loadTrianglesPreset } from "tsparticles-preset-triangles";
-import FAQ from "./FAQ";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home/Home.js";
 
 function App() {
 
-  const particlesInit = useCallback(async (engine) => {
-      await loadFull(engine);
-  }, [])
-
-
-
   return (
     <div className="App">
-        <Header />
-        <CountdownTimer />
-        <Tracks />
-        <FAQ />
-        <Particles className="particles" options={options} init={particlesInit} />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/uwb-hacks23" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
     </div>
 
   );
