@@ -16,7 +16,7 @@ function Home() {
 
   return (
     <div className="Home">
-        <Header />
+        {/*<Header />*/}
         <CountdownTimer />
         <Tracks />
         <FAQ />
