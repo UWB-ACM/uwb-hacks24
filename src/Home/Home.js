@@ -1,7 +1,6 @@
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import Header from "./Header";
 import CountdownTimer from "./CountDownTimer";
 import Tracks from "./Tracks";
 import options from "./particleConfig"; // configuration of particles
