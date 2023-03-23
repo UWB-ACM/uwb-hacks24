@@ -1,44 +1,39 @@
 import React, { useState } from 'react';
+import classNames from 'classnames';
 import './Home.css';
-import Button from 'react-bootstrap/Button';
-import Collapse from 'react-bootstrap/Collapse';
+import 'tailwindcss/tailwind.css';
 
 function CollapseButton(props) {
-  const [open, setOpen] = useState(false);
-  const [hover, setHover] = useState(false);
+    const [open, setOpen] = useState(false);
+    const [hover, setHover] = useState(false);
 
-  const buttonStyle = {
-    border: '1px solid #ced4da',
-    width: '100%',
-    borderRadius: 0,
-    margin: 0,
-    boxShadow: 'none',
-    backgroundColor: open || hover ? '#f2f2f2' : '#fff',
-    transition: 'background-color 0.15s ease-in-out',
-  };
+    const buttonStyle = classNames(
+        'border border-gray-300 w-full rounded-none p-0 bg-white',
+        {
+            'bg-gray-100': open || hover,
+        }
+    );
 
-  return (
-    <div className="collapse-button">
-      <Button
-        variant="btn-custom"
-        size="lg"
-        onClick={() => setOpen(!open)}
-        aria-controls="collapse-text"
-        aria-expanded={open}
-        block
-        style={buttonStyle}
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-      >
-        {props.buttonText}
-      </Button>
-      <Collapse in={open} style={{transition: 'height 0.3s ease-in-out'}}>
-        <div id="collapse-text" style={{height: open ? 'auto' : 0, overflow: 'hidden', transition: 'height 0.3s ease-in-out'}}>
-          {props.children}
+    return (
+        <div className="collapse-button">
+            <button
+                className={buttonStyle}
+                onClick={() => setOpen(!open)}
+                aria-controls="collapse-text"
+                aria-expanded={open}
+                onMouseEnter={() => setHover(true)}
+                onMouseLeave={() => setHover(false)}
+            >
+                {props.buttonText}
+            </button>
+            <div
+                className="overflow-hidden transition-all duration-300"
+                style={{ height: open ? 'auto' : 0 }}
+            >
+                {props.children}
+            </div>
         </div>
-      </Collapse>
-    </div>
-  );
+    );
 }
 
 export default CollapseButton;
