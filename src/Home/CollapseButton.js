@@ -8,16 +8,16 @@ function CollapseButton(props) {
     const [hover, setHover] = useState(false);
 
     const buttonStyle = classNames(
-        'border border-gray-300 w-full rounded-none p-0 bg-white',
+        'bg-purple hover:bg-purple2 text-white font-bold py-2 px-4 rounded w-100',
         {
             'bg-gray-100': open || hover,
         }
     );
 
     return (
-        <div className="collapse-button">
+        <div class="collapse-button text-purple2 text-2xl">
             <button
-                className={buttonStyle}
+                class={buttonStyle}
                 onClick={() => setOpen(!open)}
                 aria-controls="collapse-text"
                 aria-expanded={open}
@@ -27,7 +27,7 @@ function CollapseButton(props) {
                 {props.buttonText}
             </button>
             <div
-                className="overflow-hidden transition-all duration-300"
+                className="overflow-hidden"
                 style={{ height: open ? 'auto' : 0 }}
             >
                 {props.children}
