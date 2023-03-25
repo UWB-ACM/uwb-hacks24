@@ -3,10 +3,17 @@ import Home from "./Home/Home.js";
 import Register from "./Register/Register";
 import Header from "./Home/Header";
 import FAQ from "./Home/FAQ";
-import React from "react";
+import React, {useEffect} from "react";
 
 
 function App() {
+
+  useEffect(() => {
+    const importTE = async () => {
+      await import("tw-elements");
+    };
+    importTE();
+  }, []);
 
   return (
     <div className="App">
