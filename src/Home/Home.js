@@ -6,6 +6,7 @@ import Tracks from "./Tracks";
 import options from "./particleConfig"; // configuration of particles
 import FAQ from "./FAQ";
 import './Home.css';
+import ScrollToTopButton from "./ScrollToTopButton"
 
 function Home() {
 
@@ -20,6 +21,7 @@ function Home() {
         <Tracks />
         <FAQ />
         <Particles className="particles" options={options} init={particlesInit} />
+        <ScrollToTopButton/>
     </div>
 
   );
