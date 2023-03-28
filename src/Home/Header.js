@@ -13,8 +13,13 @@ function Nav({to, text}) {
 
 function NavScroll({to, text}) {
     return (
-        <Link to={to} smooth={'easeInOutQuint'} ignoreCancelEvents={false} duration={500} isDynamic={true} offset={-10}
-              style={{cursor: 'pointer'}} className="text-warning-700 mx-5 font-bold text-3xl pt-3">
+        <Link
+            to={to}
+            smooth={true}
+            duration={500}
+            offset={-100}
+            className="text-warning-700 mx-5 font-bold text-3xl pt-3"
+        >
             {text}
         </Link>
     );
