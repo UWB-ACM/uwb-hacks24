@@ -16,18 +16,17 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-
+    <>
         <BrowserRouter>
           <Header />
-          <Routes>
+          <Routes className="max-w-md">
             <Route path="*" element={<Home />} />
             <Route path="/uwb-hacks23" element={<Home />} />
             <Route path="/uwb-hacks23/Registration" element={<Register />} />
             <Route path="/uwb-hacks23/FAQ" element={<FAQ />} />
           </Routes>
         </BrowserRouter>
-    </div>
+    </>
 
   );
 }

@@ -9,22 +9,18 @@ import './Home.css';
 import ScrollToTopButton from "./ScrollToTopButton"
 
 function Home() {
-
-  const particlesInit = useCallback(async (engine) => {
-      await loadFull(engine);
-  }, [])
-
-  return (
-    <div className="Home">
-        {/*<Header />*/}
-        <CountdownTimer />
-        <Tracks />
-        <FAQ />
-        <Particles className="particles" options={options} init={particlesInit} />
-        <ScrollToTopButton/>
-    </div>
-
-  );
+    const particlesInit = useCallback(async (engine) => {
+        await loadFull(engine);
+    }, [])
+    return (
+        <div className="Home">
+            <CountdownTimer />
+            <Tracks />
+            <FAQ />
+            <Particles className="particles" options={options} init={particlesInit} />
+            <ScrollToTopButton/>
+        </div>
+    );
 }
 
 export default Home;
