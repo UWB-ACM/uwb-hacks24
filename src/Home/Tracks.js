@@ -7,7 +7,7 @@ import Education from "./placeholder images/education.png"
 
 function Tracks() {
     return (
-        <div className="rounded-xl overflow-hidden  rounded-lg my-5">
+        <div className="rounded-xl overflow-hidden  my-5">
             <div className="font-SecularOne text-6xl text-center mt-3 mb-2">
                 Tracks
             </div>
