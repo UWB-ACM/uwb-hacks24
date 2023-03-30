@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home/Home.js";
 import Register from "./Register/Register";
-import Header from "./Home/Header";
 import FAQ from "./Home/FAQ";
 import React, {useEffect} from "react";
+import Header from "./Home/Header"
 
 
 function App() {
