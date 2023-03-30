@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 function Nav({to, text}) {
     return (
-        <NavLink to={to} className="text-warning-700 mx-5 font-bold text-3xl pt-3">
+        <NavLink to={to} className="text-black mx-5 font-bold text-3xl pt-3 mt-1">
             {text}
         </NavLink>
     );
@@ -15,10 +15,10 @@ function NavScroll({to, text}) {
     return (
         <Link
             to={to}
-            smooth={true}
-            duration={500}
-            offset={-100}
-            className="text-warning-700 mx-5 font-bold text-3xl pt-3"
+            smooth={'easeInOutQuint'}
+            duration={200}
+            offset={-10}
+            className="text-black mx-5 font-bold text-3xl pt-3 cursor-pointer mt-1"
         >
             {text}
         </Link>

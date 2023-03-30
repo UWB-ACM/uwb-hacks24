@@ -6,6 +6,9 @@ module.exports = {
     "./node_modules/tw-elements/dist/js/**/*.js"
   ],
   theme: {
+    fontFamily: {
+      'SecularOne': ['"Secular One"', 'sans-serif']
+    },
     colors: {
       'purple': '#9370d8',
       'light-purple': '#ac82ff',

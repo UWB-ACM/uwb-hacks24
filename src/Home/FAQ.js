@@ -4,7 +4,7 @@ import CollapseButton from "./CollapseButton"
 function FAQ() {
         return (
             <div id="faqSection" className="bg-white rounded-xl shadow-md overflow-hidden border-4 border-yellow-600 rounded-lg mx-5 my-5">
-                <div className="font-bold text-4xl text-center mb-2">FAQ</div>
+                <div className="font-SecularOne text-6xl text-center mb-2 mt-3">FAQ</div>
                     <div className="mx-4">
                             <CollapseButton buttonID="faqb1" buttonText= "Will UWB Hacks 2023 be in-person or virtual?" className="mx-4"> Consequat ullamco id voluptate quis. Nostrud qui duis cupidatat excepteur minim sit ad irure elit qui Lorem do qui proident. Culpa ea sunt occaecat duis esse. Exercitation id laboris qui culpa eu. Proident minim enim Lorem commodo proident consequat qui sit commodo quis. In proident aute est amet nulla dolore quis Lorem duis commodo amet do.</CollapseButton>
                             <CollapseButton buttonID="faqb2" buttonText= "Do I have to be a UWB student to register?"> Minim exercitation laboris do officia ea magna magna veniam aute ipsum dolor. Enim Lorem nostrud irure fugiat deserunt. Lorem magna pariatur nulla reprehenderit ullamco eu ea eiusmod nostrud nisi magna non. </CollapseButton>
@@ -20,7 +20,7 @@ function FAQ() {
 
                                     Lorem laborum aute occaecat est elit deserunt duis velit laboris velit quis. Culpa consectetur Lorem excepteur ex mollit consectetur qui nulla. Anim duis reprehenderit dolor pariatur aliqua in aliquip id enim esse ut ullamco ullamco culpa. Do mollit consequat ipsum exercitation tempor duis id ad Lorem.
 
-                                    Cupidatat voluptate in do duis proident ex aute aute ullamco sit velit eu fugiat.
+                                    Cupidatat voluptate in do duis proident ex aute aute ullamco sit velit eu fugiat. 
                             </CollapseButton>
                     </div>
             </div>
