@@ -47,7 +47,7 @@ export default function Header() {
                           smooth={'easeInOutQuint'}
                           duration={200}
                           offset={-10}
-                          className="text-sm font-semibold leading-6 text-gray-900">
+                          className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer">
                         FAQ
                     </Link>
                 </Popover.Group>
