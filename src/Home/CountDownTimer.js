@@ -17,8 +17,8 @@ function CountdownTimer() {
     const minutes = Math.floor((countdown / (1000 * 60)) % 60);
 
     return (
-        <div className="countdown-timer-box py-1">
-            <marquee>{days} days, {hours} hours, {minutes} minutes until 4/16 (Deadline for website)</marquee>
+        <div className="countdown-timer-box pt-2">
+            <marquee className>{days} days, {hours} hours, {minutes} minutes until 4/16 (Deadline for website)</marquee>
         </div>
     );
 }
