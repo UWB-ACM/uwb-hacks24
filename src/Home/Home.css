@@ -1,11 +1,14 @@
 .countdown-timer-box {
   background: linear-gradient(to right, #ff7f50, #ffd801);
   font-family: 'Montserrat', sans-serif;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
   color: mediumpurple;
   text-align: center;
-  padding: 15px;
+}
+
+.marquee {
+  animation: 1ms linear infinite;
 }
 
 .particles {

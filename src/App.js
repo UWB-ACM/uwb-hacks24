@@ -5,7 +5,6 @@ import FAQ from "./Home/FAQ";
 import React, {useEffect} from "react";
 import Header from "./Home/Header"
 
-
 function App() {
 
   useEffect(() => {

@@ -15,11 +15,10 @@ function CountdownTimer() {
     const days = Math.floor(countdown / (1000 * 60 * 60 * 24));
     const hours = Math.floor((countdown / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((countdown / (1000 * 60)) % 60);
-    const seconds = Math.floor((countdown / 1000) % 60);
 
     return (
-        <div className="countdown-timer-box">
-            <p>{days} days, {hours} hours, {minutes} minutes, {seconds} seconds until 4/16 (Deadline for website)</p>
+        <div className="countdown-timer-box py-1">
+            <marquee>{days} days, {hours} hours, {minutes} minutes until 4/16 (Deadline for website)</marquee>
         </div>
     );
 }
