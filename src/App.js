@@ -4,6 +4,7 @@ import Register from "./Register/Register";
 import FAQ from "./Home/FAQ";
 import React, {useEffect} from "react";
 import Header from "./Home/Header"
+import {ContactUs} from "./Home/Contact";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/uwb-hacks23" element={<Home />} />
             <Route path="/uwb-hacks23/Registration" element={<Register />} />
             <Route path="/uwb-hacks23/FAQ" element={<FAQ />} />
+            <Route path="/uwb-hacks23/Contact" element={<ContactUs />} />
           </Routes>
         </BrowserRouter>
     </>

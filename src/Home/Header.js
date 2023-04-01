@@ -40,7 +40,7 @@ export default function Header() {
                     <NavLink to="/uwb-hacks23/Registration" className="text-sm font-semibold leading-6 text-gray-900">
                         Registration
                     </NavLink>
-                    <NavLink to="mailto:acmuwbothell@gmail.com?subject=Hackathon" className="text-sm font-semibold leading-6 text-gray-900">
+                    <NavLink to="/uwb-hacks23/Contact" className="text-sm font-semibold leading-6 text-gray-900">
                         Contact
                     </NavLink>
                     <Link to="faqSection"
@@ -92,7 +92,7 @@ export default function Header() {
                                     Registration
                                 </NavLink>
                                 <NavLink
-                                    to="mailto:acmuwbothell@gmail.com?subject=Hackathon"
+                                    to="/uwb-hacks23/Contact"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                     onClick={handleCloseMenu}
                                 >

@@ -15,7 +15,6 @@ import {
 function Register() {
     return (
         <MDBContainer fluid className='bg-dark'>
-
             <MDBRow className='d-flex justify-content-center align-items-center h-100'>
                 <MDBCol>
 
@@ -80,7 +79,6 @@ function Register() {
 
                 </MDBCol>
             </MDBRow>
-
         </MDBContainer>
     );
 }
