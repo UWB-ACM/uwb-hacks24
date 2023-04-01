@@ -1,8 +1,15 @@
-import React, { useRef } from 'react';
+import React, {useCallback, useRef} from 'react';
 import emailjs from '@emailjs/browser';
+import options from "./particleConfig";
+import Particles from "react-particles";
+import {loadFull} from "tsparticles";
 
 export const ContactUs = () => {
     const form = useRef();
+
+    const particlesInit = useCallback(async (engine) => {
+        await loadFull(engine);
+    }, [])
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -19,6 +26,7 @@ export const ContactUs = () => {
 
     return (
         <div className="overflow-hidden flex flex-col items-center justify-center">
+            <Particles className="particles" options={options} init={particlesInit} />
             <div className="flex shadow-md overflow-hidden border-1 rounded-xl mx-auto mt-5 flex-col sm:w-1/2 bg-light-purple">
                 <form ref={form} onSubmit={sendEmail} className="w-full px-5 py-3">
                     <label htmlFor="name" className="font-SecularOne block text-3xl font-medium leading-6 text-white">
