@@ -18,7 +18,7 @@ function CountdownTimer() {
 
     return (
         <div className="countdown-timer-box pt-2">
-            <marquee className>{days} days, {hours} hours, {minutes} minutes until 4/16 (Deadline for website)</marquee>
+            <marquee>{days} days, {hours} hours, {minutes} minutes until 4/16 (Deadline for website)</marquee>
         </div>
     );
 }

@@ -29,7 +29,7 @@ export const ContactUs = () => {
             <Particles className="particles" options={options} init={particlesInit} />
             <div className="flex shadow-md overflow-hidden border-1 rounded-xl mx-auto mt-5 flex-col sm:w-1/2 bg-light-purple">
                 <form ref={form} onSubmit={sendEmail} className="w-full px-5 py-3">
-                <div className="font-SecularOne block text-3xl font-medium leading-6 text-white pt-1 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"> CONTACT FORM </div>
+                    <div className="font-SecularOne block text-3xl font-medium leading-6 text-white pt-1 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mb-3 text-center"> CONTACT FORM </div>
                     <label htmlFor="name" className="font-SecularOne block text-3xl font-medium leading-6 text-white  pt-3">
                         Name
                     </label>

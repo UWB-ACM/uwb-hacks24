@@ -21,7 +21,6 @@ export default function Header() {
                     <span className="sr-only">UWB Hacks</span>
                     <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="UWB Hacks Logo" />
                 </div>
-
                 <div className="flex lg:hidden">
                     <button
                         type="button"
@@ -50,6 +49,11 @@ export default function Header() {
                           className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer">
                         FAQ
                     </Link>
+                    <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                            Log In
+                        </a>
+                    </div>
                 </Popover.Group>
             </nav>
 
@@ -108,6 +112,14 @@ export default function Header() {
                                 >
                                     FAQ
                                 </Link>
+                                <div className="py-6">
+                                    <a
+                                        href="#"
+                                        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    >
+                                        Log in
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
