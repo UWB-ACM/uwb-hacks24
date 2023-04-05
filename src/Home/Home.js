@@ -1,11 +1,9 @@
 import { useCallback } from "react";
-import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import CountdownTimer from "./CountDownTimer";
 import Tracks from "./Tracks";
-import options from "./particleConfig"; // configuration of particles
 import FAQ from "./FAQ";
 import './Home.css';
+import HeaderSection from "./HeaderSection";
 import ScrollToTopButton from "./ScrollToTopButton"
 
 function Home() {
@@ -13,11 +11,11 @@ function Home() {
         await loadFull(engine);
     }, [])
     return (
-        <div className="Home">
-            <CountdownTimer />
+        <div className="w-full Home">
+            <HeaderSection />
             <Tracks />
             <FAQ />
-            <Particles className="particles" options={options} init={particlesInit} />
+            {/*<Particles className="particles" options={options} init={particlesInit} />*/}
             <ScrollToTopButton/>
         </div>
     );
