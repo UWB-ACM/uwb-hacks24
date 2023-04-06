@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-expressions */
-
 import "./Home.css"
 import CountDownTimer from "./CountDownTimer";
 import {useEffect} from "react";
@@ -31,7 +30,13 @@ export default function HeaderSection() {
     return (
         <>
             <CountDownTimer/>
-            <div className="h-screen mx-auto py-32 sm:py-48 lg:py-56">
+            <div className="h-screen mx-auto py-32 sm:py-48 lg:py-56"
+                 style={{
+                     backgroundImage: `url("")`,
+                     backgroundSize: 'cover',
+                     backgroundPosition: 'center',
+                 }}
+            >
                 <div className="text-center">
                     <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                         UWB

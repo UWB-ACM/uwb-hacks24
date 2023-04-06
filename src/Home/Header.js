@@ -6,12 +6,59 @@ import {
 } from '@heroicons/react/24/outline'
 import {NavLink} from "react-router-dom";
 import {Link} from "react-scroll";
+import {useLocation} from "react-router-dom";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faRocket} from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     function handleCloseMenu() {
         setMobileMenuOpen(false);
+    }
+
+    const location = useLocation();
+
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
+
+    if (location.pathname === "/uwb-hacks23/Contact" || location.pathname === "/uwb-hacks23/Registration" || location.pathname === "/uwb-hacks23/Login") {
+        return (
+            <header className="h-20 flex justify-end">
+                <div className="px-5 py-4">
+                    {!isHovered ? (
+                        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                            <NavLink
+                                to="/uwb-hacks23"
+                                className="text-lg font-semibold leading-6 text-purple pt-5 px-1 hover:text-orange"
+                            >
+                                Return to Home
+                                <span> </span>
+                                <FontAwesomeIcon icon={faRocket} style={{ color: "purple" }}/>
+                            </NavLink>
+                        </div>
+                    ) : (
+                        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={() => setIsHovered(false)}>
+                            <NavLink
+                                to="/uwb-hacks23"
+                                className="text-lg font-semibold leading-6 text-orange pt-5 px-1 hover:text-orange"
+                            >
+                                Return to Home
+                                <span> </span>
+                                <FontAwesomeIcon icon={faRocket} beat style={{ color: "orange" }}/>
+                            </NavLink>
+                        </div>
+                    )}
+                </div>
+            </header>
+        )
     }
 
     return (
