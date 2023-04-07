@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Dialog, Popover} from '@headlessui/react'
 import {
     Bars3Icon,
@@ -12,7 +12,13 @@ import {faRocket} from "@fortawesome/free-solid-svg-icons";
 import CountdownTimer from "./CountDownTimer";
 
 export default function Header() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [headerOpacity, setHeaderOpacity] = useState(false);
+
+    function handleHeaderOpacity(){
+        const currentScrollPos = window.pageYOffset;
+        setHeaderOpacity(currentScrollPos > 1);
+    }
 
     function handleCloseMenu() {
         setMobileMenuOpen(false);
@@ -29,6 +35,11 @@ export default function Header() {
     const handleMouseLeave = () => {
         setIsHovered(false);
     };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleHeaderOpacity);
+        return () => window.removeEventListener('scroll', handleHeaderOpacity);
+      }, []);
 
     if (location.pathname === "/uwb-hacks23/Contact" || location.pathname === "/uwb-hacks23/Registration" || location.pathname === "/uwb-hacks23/Login") {
         return (
@@ -67,13 +78,13 @@ export default function Header() {
     }
 
     return (
-        <header className="bg-white sticky top-0 z-20 ">
-            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 h-20 " aria-label="Global">
+        <header className={`sticky transition top-0 z-20 ${headerOpacity ? 'bg-opacity-20  bg-black' : 'bg-opacity-100 bg-white' } duration-50`}>
+            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 h-20" aria-label="Global">
                 <div className="flex lg:flex-1  h-full">
                     <span className="sr-only">UWB Hacks</span>
                     <img className="h-full" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="UWB Hacks Logo" />
                 </div>
-                <div className="flex lg:hidden">
+                <div className="flex lg:hidden ">
                     <button
                         type="button"
                         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:bg-light-purple"
@@ -84,7 +95,7 @@ export default function Header() {
                     </button>
                 </div>
 
-                <Popover.Group className="hidden lg:flex lg:gap-x-12 ">
+                <Popover.Group className="hidden lg:flex lg:gap-x-12">
                     
                     <NavLink to="/uwb-hacks23" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
                         Home
