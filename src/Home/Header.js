@@ -68,10 +68,10 @@ export default function Header() {
 
     return (
         <header className="bg-white">
-            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-                <div className="flex lg:flex-1 -m-1.5 p-1.5">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 h-20" aria-label="Global">
+                <div className="flex lg:flex-1  h-full">
                     <span className="sr-only">UWB Hacks</span>
-                    <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="UWB Hacks Logo" />
+                    <img className="h-full" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="UWB Hacks Logo" />
                 </div>
                 <div className="flex lg:hidden">
                     <button
@@ -84,25 +84,25 @@ export default function Header() {
                     </button>
                 </div>
 
-                <Popover.Group className="hidden lg:flex lg:gap-x-12">
-                    <NavLink to="/uwb-hacks23" className="text-sm font-semibold leading-6 text-gray-900">
+                <Popover.Group className="hidden lg:flex lg:gap-x-12 ">
+                    <NavLink to="/uwb-hacks23" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
                         Home
                     </NavLink>
-                    <NavLink to="/uwb-hacks23/Registration" className="text-sm font-semibold leading-6 text-gray-900">
+                    <NavLink to="/uwb-hacks23/Registration" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
                         Registration
                     </NavLink>
-                    <NavLink to="/uwb-hacks23/Contact" className="text-sm font-semibold leading-6 text-gray-900">
+                    <NavLink to="/uwb-hacks23/Contact" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
                         Contact
                     </NavLink>
                     <Link to="faqSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
                           offset={-10}
-                          className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer">
+                          className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer hover:text-yellow">
                         FAQ
                     </Link>
-                    <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                    <div className="hidden lg:flex lg:flex-1 lg:justify-end ">
+                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
                             Log In
                         </a>
                     </div>
