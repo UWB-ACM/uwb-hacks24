@@ -68,15 +68,15 @@ export default function Header() {
 
     return (
         <header className="bg-white">
-            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-                <div className="flex lg:flex-1 -m-1.5 p-1.5">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 h-20" aria-label="Global">
+                <div className="flex lg:flex-1  h-full">
                     <span className="sr-only">UWB Hacks</span>
-                    <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="UWB Hacks Logo" />
+                    <img className="h-full" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="UWB Hacks Logo" />
                 </div>
                 <div className="flex lg:hidden">
                     <button
                         type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:bg-light-purple"
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
@@ -84,25 +84,26 @@ export default function Header() {
                     </button>
                 </div>
 
-                <Popover.Group className="hidden lg:flex lg:gap-x-12">
-                    <NavLink to="/uwb-hacks23" className="text-sm font-semibold leading-6 text-gray-900">
+                <Popover.Group className="hidden lg:flex lg:gap-x-12 ">
+                    
+                    <NavLink to="/uwb-hacks23" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
                         Home
                     </NavLink>
-                    <NavLink to="/uwb-hacks23/Registration" className="text-sm font-semibold leading-6 text-gray-900">
+                    <NavLink to="/uwb-hacks23/Registration" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
                         Registration
                     </NavLink>
-                    <NavLink to="/uwb-hacks23/Contact" className="text-sm font-semibold leading-6 text-gray-900">
+                    <NavLink to="/uwb-hacks23/Contact" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
                         Contact
                     </NavLink>
                     <Link to="faqSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
                           offset={-10}
-                          className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer">
+                          className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer hover:text-yellow">
                         FAQ
                     </Link>
-                    <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                    <div className="hidden lg:flex lg:flex-1 lg:justify-end ">
+                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
                             Log In
                         </a>
                     </div>
@@ -127,7 +128,7 @@ export default function Header() {
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             <span className="sr-only">Close menu</span>
-                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                            <XMarkIcon className="h-6 w-6 hover:bg-light-purple rounded" aria-hidden="true" />
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
