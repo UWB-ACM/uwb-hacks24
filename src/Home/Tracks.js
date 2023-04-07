@@ -1,6 +1,5 @@
-import React, {useCallback} from 'react';
+import React from 'react';
 import './Home.css';
-import TrackCard from "./TrackCard"
 import Entertainment from "./placeholder images/entertainment.png"
 import Sustainability from "./placeholder images/sustainability.png"
 import Education from "./placeholder images/education.png"
@@ -22,7 +21,6 @@ function Tracks() {
             </div>
         </>
     );
-
 }
 
 export default Tracks;
