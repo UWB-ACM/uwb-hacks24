@@ -10,10 +10,14 @@ module.exports = {
       'SecularOne': ['"Secular One"', 'sans-serif']
     },
     colors: {
+      'white': '#ffffff',
       'purple': '#9370d8',
       'light-purple': '#ac82ff',
       'yellow': '#ffd801',
       'orange': '#ff7f50',
+      'light-gray': '#fefefe',
+      'gray': '#96a1a7',
+      'black': '#000000',
     },
     extend: {},
   },
