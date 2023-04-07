@@ -78,7 +78,7 @@ export default function Header() {
     }
 
     return (
-        <header className={`sticky transition top-0 z-20 ${headerOpacity ? 'bg-opacity-20  bg-black' : 'bg-opacity-100 bg-white' } duration-50`}>
+        <header className={`sticky transition top-0 z-20 ${headerOpacity ? 'bg-opacity-90  bg-light-gray' : 'bg-opacity-100 bg-white' } duration-50`}>
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 h-20" aria-label="Global">
                 <div className="flex lg:flex-1  h-full">
                     <span className="sr-only">UWB Hacks</span>
