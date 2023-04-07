@@ -76,7 +76,7 @@ export default function Header() {
                 <div className="flex lg:hidden">
                     <button
                         type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:bg-light-purple"
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
@@ -85,6 +85,7 @@ export default function Header() {
                 </div>
 
                 <Popover.Group className="hidden lg:flex lg:gap-x-12 ">
+                    
                     <NavLink to="/uwb-hacks23" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
                         Home
                     </NavLink>
@@ -127,7 +128,7 @@ export default function Header() {
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             <span className="sr-only">Close menu</span>
-                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                            <XMarkIcon className="h-6 w-6 hover:bg-light-purple rounded" aria-hidden="true" />
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
