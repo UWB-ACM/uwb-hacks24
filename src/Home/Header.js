@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Dialog, Popover} from '@headlessui/react'
 import {
     Bars3Icon,
@@ -12,7 +12,13 @@ import {faRocket} from "@fortawesome/free-solid-svg-icons";
 import CountdownTimer from "./CountDownTimer";
 
 export default function Header() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [headerOpacity, setHeaderOpacity] = useState(false);
+
+    function handleHeaderOpacity(){
+        const currentScrollPos = window.pageYOffset;
+        setHeaderOpacity(currentScrollPos > 1);
+    }
 
     function handleCloseMenu() {
         setMobileMenuOpen(false);
@@ -30,10 +36,15 @@ export default function Header() {
         setIsHovered(false);
     };
 
+    useEffect(() => {
+        window.addEventListener('scroll', handleHeaderOpacity);
+        return () => window.removeEventListener('scroll', handleHeaderOpacity);
+      }, []);
+
     if (location.pathname === "/uwb-hacks23/Contact" || location.pathname === "/uwb-hacks23/Registration" || location.pathname === "/uwb-hacks23/Login") {
         return (
             <>
-                <header className="h-20 flex justify-end">
+                <header className="h-20 flex justify-end ">
                     <div className="px-5 py-4">
                         {!isHovered ? (
                             <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
@@ -67,13 +78,13 @@ export default function Header() {
     }
 
     return (
-        <header className="bg-white">
+        <header className={`sticky transition top-0 z-20 ${headerOpacity ? 'bg-opacity-90  bg-light-gray' : 'bg-opacity-100 bg-white' } duration-50`}>
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 h-20" aria-label="Global">
                 <div className="flex lg:flex-1  h-full">
                     <span className="sr-only">UWB Hacks</span>
                     <img className="h-full" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="UWB Hacks Logo" />
                 </div>
-                <div className="flex lg:hidden">
+                <div className="flex lg:hidden ">
                     <button
                         type="button"
                         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:bg-light-purple"
@@ -84,7 +95,7 @@ export default function Header() {
                     </button>
                 </div>
 
-                <Popover.Group className="hidden lg:flex lg:gap-x-12 ">
+                <Popover.Group className="hidden lg:flex lg:gap-x-12">
                     
                     <NavLink to="/uwb-hacks23" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
                         Home
@@ -111,8 +122,8 @@ export default function Header() {
             </nav>
 
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                <div className="fixed inset-0 z-10" />
-                <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div className="fixed inset-0 " />
+                <Dialog.Panel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
@@ -124,11 +135,11 @@ export default function Header() {
                         </a>
                         <button
                             type="button"
-                            className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                            className="-m-2.5 rounded-md p-2.5 text-gray-700 hover:bg-light-purple"
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             <span className="sr-only">Close menu</span>
-                            <XMarkIcon className="h-6 w-6 hover:bg-light-purple rounded" aria-hidden="true" />
+                            <XMarkIcon className="h-6 w-6  rounded" aria-hidden="true" />
                         </button>
                     </div>
                     <div className="mt-6 flow-root">
