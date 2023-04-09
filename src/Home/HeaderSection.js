@@ -66,13 +66,8 @@ export default function HeaderSection() {
                         </span>
                     </h1>
                 </div>
-                <div className="flex flex-col items-center justify-center mt-5">
-                    <div
-                        className="inline-flex items-center justify-center border-2 border-gray-900 rounded-full p-2 w-1/4">
-                        <span className="text-lg font-medium text-gray-900">May 5th - 7th</span>
-                        <span className="text-lg text-gray-900 mx-2">&middot;</span>
-                        <span className="text-lg font-medium text-gray-900">UWB</span>
-                    </div>
+                <div className="flex flex-col items-center justify-center mt-5 mx-auto text-center">
+                        <span className="text-2xl font-semibold text-purple">May 5th - 7th @ UWB ARC</span>
                 </div>
             </div>
         </>

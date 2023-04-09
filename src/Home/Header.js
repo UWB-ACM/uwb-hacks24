@@ -81,8 +81,8 @@ export default function Header() {
         <header className={`sticky transition top-0 z-20 ${headerOpacity ? 'bg-opacity-90  bg-light-gray' : 'bg-opacity-100 bg-white' } duration-50`}>
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 h-20" aria-label="Global">
                 <div className="flex lg:flex-1  h-full">
-                    <span className="sr-only">UWB Hacks</span>
-                    <img className="h-full" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="UWB Hacks Logo" />
+                    <span className="text-purple font-bold">UWB Hacks</span>
+                    {/*<img className="h-full" src=" " alt="UWB Hacks Logo" />*/}
                 </div>
                 <div className="flex lg:hidden ">
                     <button
@@ -126,12 +126,12 @@ export default function Header() {
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
-                            <span className="sr-only">Your Company</span>
-                            <img
-                                className="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                alt=""
-                            />
+                            <span className="font-bold text-purple">UWB Hacks</span>
+                            {/*<img*/}
+                            {/*    className="h-8 w-auto"*/}
+                            {/*    src=""*/}
+                            {/*    alt="Uwb Hacks 23"*/}
+                            {/*/>*/}
                         </a>
                         <button
                             type="button"
@@ -147,21 +147,21 @@ export default function Header() {
                             <div className="space-y-2 py-6">
                                 <NavLink
                                     to="/uwb-hacks23"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
                                     onClick={handleCloseMenu}
                                 >
                                     Home
                                 </NavLink>
                                 <NavLink
                                     to="/uwb-hacks23/Registration"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
                                     onClick={handleCloseMenu}
                                 >
                                     Registration
                                 </NavLink>
                                 <NavLink
                                     to="/uwb-hacks23/Contact"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
                                     onClick={handleCloseMenu}
                                 >
                                     Contact
@@ -171,7 +171,7 @@ export default function Header() {
                                     smooth={'easeInOutQuint'}
                                     duration={200}
                                     offset={-10}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
                                     onClick={handleCloseMenu}
                                 >
                                     FAQ
@@ -179,7 +179,7 @@ export default function Header() {
                                 <div className="py-6">
                                     <a
                                         href="#"
-                                        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
                                     >
                                         Log in
                                     </a>
