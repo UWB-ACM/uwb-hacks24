@@ -826,7 +826,7 @@ const options = {
             }
         },
         "color": {
-            "value": "#A020F0",
+            "value": ["#A020F0", "#ff7f50", '#ffd801', '#ac82ff', '#9370d8' ],
             "animation": {
                 "h": {
                     "count": 0,
@@ -936,7 +936,7 @@ const options = {
             },
             "value": {
                 "min": 0.1,
-                "max": 0.5
+                "max": 0.2
             },
             "animation": {
                 "count": 0,
