@@ -7,7 +7,7 @@ import FAQ from "./FAQ";
 import './Home.css';
 import ScrollToTopButton from "./ScrollToTopButton"
 import HeaderSection from "./HeaderSection";
-import CountDownTimer from "./CountDownTimer";
+import Sponsors from "./Sponsors";
 
 function Home() {
     const particlesInit = useCallback(async (engine) => {
@@ -16,9 +16,9 @@ function Home() {
     return (
         <>
             <HeaderSection />
-            <CountDownTimer/>
             <div className="w-full Home">
                 <Tracks />
+                <Sponsors/>
                 <FAQ />
                 <Particles className="particles" options={options} init={particlesInit} />
                 <ScrollToTopButton/>

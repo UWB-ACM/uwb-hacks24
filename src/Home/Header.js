@@ -81,7 +81,7 @@ export default function Header() {
         <header className={`sticky transition top-0 z-20 ${headerOpacity ? 'bg-opacity-90  bg-light-gray' : 'bg-opacity-100 bg-white' } duration-50`}>
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 h-20" aria-label="Global">
                 <div className="flex lg:flex-1  h-full">
-                    <span className="text-purple font-bold">UWB Hacks</span>
+                    <span className="text-purple font-bold ">UWB Hacks</span>
                     {/*<img className="h-full" src=" " alt="UWB Hacks Logo" />*/}
                 </div>
                 <div className="flex lg:hidden ">
@@ -106,13 +106,28 @@ export default function Header() {
                     <NavLink to="/uwb-hacks23/Contact" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
                         Contact
                     </NavLink>
+                    <Link to="trackSection"
+                          smooth={'easeInOutQuint'}
+                          duration={200}
+                          offset={-80}
+                          className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer hover:text-yellow">
+                        Tracks
+                    </Link>
+                    <Link to="sponsorSection"
+                          smooth={'easeInOutQuint'}
+                          duration={200}
+                          offset={-80}
+                          className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer hover:text-yellow">
+                        Sponsors
+                    </Link>
                     <Link to="faqSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
-                          offset={-10}
+                          offset={-80}
                           className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer hover:text-yellow">
                         FAQ
                     </Link>
+
                     {/*<div className="hidden lg:flex lg:flex-1 lg:justify-end ">*/}
                     {/*    <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">*/}
                     {/*        Log In*/}
@@ -167,15 +182,36 @@ export default function Header() {
                                     Contact
                                 </NavLink>
                                 <Link
+                                    to="trackSection"
+                                    smooth={'easeInOutQuint'}
+                                    duration={200}
+                                    offset={-80}
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
+                                    onClick={handleCloseMenu}
+                                >
+                                    Tracks
+                                </Link>
+                                <Link
+                                    to="sponsorSection"
+                                    smooth={'easeInOutQuint'}
+                                    duration={200}
+                                    offset={-80}
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
+                                    onClick={handleCloseMenu}
+                                >
+                                    Sponsors
+                                </Link>
+                                <Link
                                     to="faqSection"
                                     smooth={'easeInOutQuint'}
                                     duration={200}
-                                    offset={-10}
+                                    offset={-80}
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
                                     onClick={handleCloseMenu}
                                 >
                                     FAQ
                                 </Link>
+
                                 {/*<div className="py-6">*/}
                                 {/*    <a*/}
                                 {/*        href="#"*/}
