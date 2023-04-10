@@ -61,7 +61,7 @@ function StackedCards(props) {
       <div
         className={`absolute h-full w-full left-2 top-2 bg-white rounded-lg  transition-all duration-500 transform border-2 ${bottomZ} ${bottomY} ${bottomX} cursor-pointer`}
       >
-        <div className="flex flex-col items-center  h-full w-full bg-white rounded-xl p-4 ">
+        <div className="flex flex-col items-center  h-full w-full  rounded-xl p-4 ">
                 <div className="font-bold text-3xl">{props.cardTitle}</div>
                 <div className=" text-1xl">{props.children}</div>
         </div>
@@ -69,7 +69,7 @@ function StackedCards(props) {
       <div
         className={`absolute h-full w-full rounded-lg bg-white  transition-all duration-500 transform border-2 ${topY} ${topX} cursor-pointer`}
       >
-        <div className="flex flex-col items-center justify-center h-full w-full bg-white rounded-xl p-4 ">
+        <div className="flex flex-col items-center justify-center h-full w-full  rounded-xl p-4 ">
                 <div className="font-bold text-3xl">{props.cardTitle}</div>
                 <img className="h-full w-full rounded-xl object-contain " src={props.backgroundImage} alt="" />
         </div>
