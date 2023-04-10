@@ -1,85 +1,157 @@
-import React from 'react';
-import {
-    MDBBtn,
-    MDBContainer,
-    MDBCard,
-    MDBCardBody,
-    MDBCardImage,
-    MDBRow,
-    MDBCol,
-    MDBInput,
-    MDBRadio,
-}
-    from 'mdb-react-ui-kit';
+import React, {useCallback, useRef} from 'react';
+import Particles from "react-particles";
+import options from "../Home/particleConfig";
+import {loadFull} from "tsparticles";
 
 function Register() {
+    const form = useRef();
+
+    const particlesInit = useCallback(async (engine) => {
+        await loadFull(engine);
+    }, []);
+
     return (
-        <MDBContainer fluid className='bg-dark'>
-            <MDBRow className='d-flex justify-content-center align-items-center h-100'>
-                <MDBCol>
+        <div className="overflow-hidden flex flex-col items-center justify-center">
+            <Particles className="particles" options={options} init={particlesInit} />
+            <div className="flex shadow-md overflow-hidden border-1 rounded-xl mx-auto mt-5 flex-col sm:w-1/2 bg-light-purple">
+                <form ref={form} className="w-full px-5 py-3">
+                    <div className="font-SecularOne block text-3xl font-medium leading-6 text-white pt-1 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] mb-3 text-center"> REGISTRATION </div>
+                    <label htmlFor="name" className="font-SecularOne block text-3xl font-medium leading-6 text-white  pt-3">
+                        First Name: *
+                    </label>
+                    <input type="text" name="first_name" placeholder="First Name" className="relative mt-2 rounded-md shadow-sm border-1 text-xl w-full"/>
 
-                    <MDBCard className='my-4'>
+                    <label htmlFor="name" className="font-SecularOne block text-3xl font-medium leading-6 text-white  pt-3">
+                        Last Name: *
+                    </label>
+                    <input type="text" name="last_name" placeholder="Last Name" className="relative mt-2 rounded-md shadow-sm border-1 text-xl w-full"/>
 
-                        <MDBRow className='g-0'>
+                    <label htmlFor="age" className="font-SecularOne block text-3xl font-medium leading-6 text-white pt-4">
+                        Age: *
+                    </label>
+                    <input type="number" name="age" placeholder="Age" className="relative mt-2 rounded-md shadow-sm border-1 text-xl w-full"/>
 
-                            <MDBCol md='6' className="d-none d-md-block">
-                                <MDBCardImage src='https://media.segd.org/s3fs-public/styles/galleryformatter_slide/public/UW-W-MCD-1.jpg?itok=mjQ0LrD2' alt="Sample photo" className="rounded-start" fluid/>
-                            </MDBCol>
+                    <label htmlFor="email" className="font-SecularOne block text-3xl font-medium leading-6 text-white pt-4">
+                        Email: *
+                    </label>
+                    <input type="email" name="user_email" placeholder="Email" className="relative mt-2 rounded-md shadow-sm border-1 text-xl w-full"/>
 
-                            <MDBCol md='6'>
+                    <label htmlFor="race" className="font-SecularOne block text-3xl font-medium leading-6 text-white pt-4">
+                        Race/Ethnicity
+                    </label>
+                    <input type="text" name="race/ethnicity" className="relative mt-2 rounded-md shadow-sm border-1 text-xl w-full"/>
 
-                                <MDBCardBody className='text-black d-flex flex-column justify-content-center'>
-                                    <h3 className="mb-5 text-uppercase fw-bold">Student registration form</h3>
+                    <label htmlFor="gender" className="font-SecularOne block text-3xl font-medium leading-6 text-white pt-4">
+                        Gender:
+                    </label>
+                    <select id="gender" name="gender" className="relative mt-2 rounded-md shadow-sm border-1 text-xl w-full">
+                        <option value="male">
+                            Male
+                        </option>
+                        <option value="female">
+                            Female
+                        </option>
+                        <option value="non-binary">
+                            Non-binary
+                        </option>
+                        <option value="other">
+                            Other
+                        </option>
+                        <option value="prefer not to say" selected>
+                            Prefer not to say
+                        </option>
+                    </select>
 
-                                    <MDBRow>
+                    <label htmlFor="occupation" className="font-SecularOne block text-3xl font-medium leading-6 text-white pt-4">
+                        Occupation: *
+                    </label>
+                    <select id="occupation" name="occupation" className="relative mt-2 rounded-md shadow-sm border-1 text-xl w-full">
+                        <option value="high school student">
+                            High School Student
+                        </option>
+                        <option value="undergrad student" selected>
+                            Undergraduate Student
+                        </option>
+                        <option value="graduate student">Graduate Student</option>
+                        <option value="working professional">
+                            Working Professional
+                        </option>
+                        <option value="Other">
+                            Other
+                        </option>
+                    </select>
+                    <label htmlFor="school" className="font-SecularOne block text-3xl font-medium leading-6 text-white pt-4">
+                        School: *
+                    </label>
+                    <select id="school" name="school" className="relative mt-2 rounded-md shadow-sm border-1 text-xl w-full">
+                        <option value="UW Bothell" selected>
+                            UW Bothell
+                        </option>
+                        <option value="UW Seattle">
+                            UW Seattle
+                        </option>
+                        <option value="UW Tacoma">
+                            UW Tacoma
+                        </option>
+                    </select>
+                    <label htmlFor="Institutional Affiliation" className="font-SecularOne block text-3xl font-medium leading-6 text-white pt-4">
+                        Institutional Affiliation (School, Employer...)
+                    </label>
+                    <input type="email" name="user_email" className="relative mt-2 rounded-md shadow-sm border-1 text-xl w-full"/>
+                    <label htmlFor="team" className="font-SecularOne block text-3xl font-medium leading-6 text-white pt-4">
+                        Do you have a team? *
+                    </label>
+                    <select id="team" name="team options" className="relative mt-2 rounded-md shadow-sm border-1 text-xl w-full">
+                        <option value="yes">
+                            Yes
+                        </option>
+                        <option value="no">
+                            No
+                        </option>
+                        <option value="solo">
+                            Solo
+                        </option>
+                    </select>
 
-                                        <MDBCol md='6'>
-                                            <MDBInput wrapperClass='mb-4' label='First Name' size='lg' id='form1' type='text'/>
-                                        </MDBCol>
+                    <label htmlFor="hear" className="font-SecularOne block text-3xl font-medium leading-6 text-white pt-4">
+                        How did you hear about us? *
+                    </label>
+                    <select id="hear" name="hear about" className="relative mt-2 rounded-md shadow-sm border-1 text-xl w-full">
+                        <option value="discord">
+                            Discord
+                        </option>
+                        <option value="word of mouth">
+                            Word of Mouth
+                        </option>
+                        <option value="acm officers">
+                            Acm Officers
+                        </option>
+                        <option value="professors">
+                            Professors
+                        </option>
+                        <option value="email">
+                            Email
+                        </option>
+                        <option value="linkedIn">
+                            LinkedIn
+                        </option>
+                        <option value="news letter">
+                            News Letter
+                        </option>
+                        <option value="other">
+                            Other
+                        </option>
+                    </select>
 
-                                        <MDBCol md='6'>
-                                            <MDBInput wrapperClass='mb-4' label='Last Name' size='lg' id='form2' type='text'/>
-                                        </MDBCol>
-
-                                    </MDBRow>
-
-                                    <MDBInput wrapperClass='mb-4' label='Email' size='lg' id='form3' type='text'/>
-
-                                    <div className='d-md-flex ustify-content-start align-items-center mb-4'>
-                                        <h6 class="fw-bold mb-0 me-4">Gender: </h6>
-                                        <MDBRadio name='inlineRadio' id='inlineRadio1' value='option1' label='Female' inline />
-                                        <MDBRadio name='inlineRadio' id='inlineRadio2' value='option2' label='Male' inline />
-                                        <MDBRadio name='inlineRadio' id='inlineRadio3' value='option3' label='Other' inline />
-                                        <MDBRadio name='inlineRadio' id='inlineRadio3' value='option3' label='Pref not to say' inline />
-                                    </div>
-
-
-                                    <MDBInput wrapperClass='mb-4' label='Age' size='lg' id='form4' type='text'/>
-                                    <MDBInput wrapperClass='mb-4' label='Institutional affiliation (school, employer...)' size='lg' id='form5' type='text'/>
-                                    <MDBInput wrapperClass='mb-4' label='How did you hear about us?' size='lg' id='form6' type='text'/>
-                                    <MDBInput wrapperClass='mb-4' label='What country and timezone (EST, PST, MST...) are you located in?' size='lg' id='form4' type='text'/>
-                                    <MDBInput wrapperClass='mb-4' label='Do you have a team? Going solo?' size='lg' id='form5' type='text'/>
-                                    <MDBInput wrapperClass='mb-4' label='School' size='lg' id='form6' type='text'/>
-                                    <MDBInput wrapperClass='mb-4' label='Race' size='lg' id='form4' type='text'/>
-                                    <MDBInput wrapperClass='mb-4' label='Is there anything else you would like us to know?' size='lg' id='form5' type='text'/>
-
-
-                                    <div className="d-flex justify-content-end pt-3">
-                                        <button type="button" className="btn btn-secondary">Secondary</button>
-                                        <button type="button" className="btn btn-primary">Primary</button>
-                                        {/*<MDBBtn className='ms-2' color='warning' size='lg'>Submit form</MDBBtn>*/}
-                                    </div>
-
-                                </MDBCardBody>
-
-                            </MDBCol>
-                        </MDBRow>
-
-                    </MDBCard>
-
-                </MDBCol>
-            </MDBRow>
-        </MDBContainer>
+                    <div className="pt-4 pb-2">
+                        <button
+                            className="bg-white text-blue-700 font-semibold py-2 px-4 rounded w-full">
+                            <input type="submit" value="Register" className="text-2xl"/>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     );
 }
 
