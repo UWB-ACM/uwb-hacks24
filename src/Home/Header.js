@@ -78,7 +78,7 @@ export default function Header() {
     }
 
     return (
-        <header className={`sticky transition top-0 z-20 ${headerOpacity ? 'bg-opacity-90  bg-light-gray' : 'bg-opacity-100 bg-white' } duration-50`}>
+        <header className={`bg-white`}>
             <nav className="mx-auto flex max-w-7xl items-center justify-between  lg:px-8 h-20" aria-label="Global">
                 <div className="flex lg:flex-1  h-full">
                     <span className="mt-4 mx-4 text-purple text-2xl font-bold ">UWB Hacks</span>
@@ -99,28 +99,28 @@ export default function Header() {
                     <Link to="aboutSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
-                          offset={-80}
+                          offset={0}
                           className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
                             <div className="text-black h-full mt-4">About</div>            
                     </Link>
                     <Link to="trackSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
-                          offset={-80}
+                          offset={-10}
                           className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
                             <div className="text-black h-full mt-4">Tracks</div>            
                     </Link>
                     <Link to="sponsorSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
-                          offset={-80}
+                          offset={-10}
                           className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
                             <div className="text-black h-full mt-4">Sponsors</div>            
                     </Link>
                     <Link to="faqSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
-                          offset={-80}
+                          offset={-10}
                           className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
                             <div className="text-black h-full mt-4">FAQ</div>            
                     </Link>
@@ -167,7 +167,7 @@ export default function Header() {
                                     to="aboutSection"
                                     smooth={'easeInOutQuint'}
                                     duration={200}
-                                    offset={-80}
+                                    offset={0}
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
@@ -177,7 +177,7 @@ export default function Header() {
                                     to="trackSection"
                                     smooth={'easeInOutQuint'}
                                     duration={200}
-                                    offset={-80}
+                                    offset={-10}
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
@@ -187,7 +187,7 @@ export default function Header() {
                                     to="sponsorSection"
                                     smooth={'easeInOutQuint'}
                                     duration={200}
-                                    offset={-80}
+                                    offset={-10}
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
@@ -197,7 +197,7 @@ export default function Header() {
                                     to="faqSection"
                                     smooth={'easeInOutQuint'}
                                     duration={200}
-                                    offset={-80}
+                                    offset={-10}
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
