@@ -30,7 +30,7 @@ export default function HeaderSection() {
     return (
         <>
             <CountDownTimer/>
-            <div className="h-screen mx-auto py-32 sm:py-48 lg:py-56 bg-white bg-opacity-100"
+            <div className="h-screen mx-auto py-32 sm:py-48 lg:py-56 bg-white bg-opacity-100" id="aboutSection"
                  style={{
                      backgroundImage: `url("")`,
                      backgroundSize: 'cover',

@@ -79,15 +79,15 @@ export default function Header() {
 
     return (
         <header className={`sticky transition top-0 z-20 ${headerOpacity ? 'bg-opacity-90  bg-light-gray' : 'bg-opacity-100 bg-white' } duration-50`}>
-            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 h-20" aria-label="Global">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between  lg:px-8 h-20" aria-label="Global">
                 <div className="flex lg:flex-1  h-full">
-                    <span className="text-purple font-bold ">UWB Hacks</span>
+                    <span className="mt-4 mx-4 text-purple text-2xl font-bold ">UWB Hacks</span>
                     {/*<img className="h-full" src=" " alt="UWB Hacks Logo" />*/}
                 </div>
                 <div className="flex lg:hidden ">
                     <button
                         type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:bg-light-purple"
+                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:bg-light-purple mr-3.5"
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
@@ -95,38 +95,41 @@ export default function Header() {
                     </button>
                 </div>
 
-                <Popover.Group className="hidden lg:flex lg:gap-x-12">
-                    
-                    <NavLink to="/uwb-hacks23" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
-                        Home
-                    </NavLink>
-                    <NavLink to="/uwb-hacks23/Registration" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
-                        Registration
-                    </NavLink>
-                    <NavLink to="/uwb-hacks23/Contact" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
-                        Contact
-                    </NavLink>
+                <Popover.Group className="hidden lg:flex h-full items-center justify-between">
+                    <Link to="aboutSection"
+                          smooth={'easeInOutQuint'}
+                          duration={200}
+                          offset={-80}
+                          className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                            <div className="text-black h-full mt-4">About</div>            
+                    </Link>
                     <Link to="trackSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
                           offset={-80}
-                          className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer hover:text-yellow">
-                        Tracks
+                          className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                            <div className="text-black h-full mt-4">Tracks</div>            
                     </Link>
                     <Link to="sponsorSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
                           offset={-80}
-                          className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer hover:text-yellow">
-                        Sponsors
+                          className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                            <div className="text-black h-full mt-4">Sponsors</div>            
                     </Link>
                     <Link to="faqSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
                           offset={-80}
-                          className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer hover:text-yellow">
-                        FAQ
+                          className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                            <div className="text-black h-full mt-4">FAQ</div>            
                     </Link>
+                    <NavLink to="/uwb-hacks23/Contact" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                            <div className="text-black h-full mt-4">Contact</div>   
+                    </NavLink>
+                    <NavLink to="/uwb-hacks23/Registration" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                            <div className="text-black h-full mt-4">Registration</div>   
+                    </NavLink>
 
                     {/*<div className="hidden lg:flex lg:flex-1 lg:justify-end ">*/}
                     {/*    <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">*/}
@@ -141,7 +144,7 @@ export default function Header() {
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
-                            <span className="font-bold text-purple">UWB Hacks</span>
+                        <span className="mt-4 text-purple text-2xl font-bold ">UWB Hacks</span>
                             {/*<img*/}
                             {/*    className="h-8 w-auto"*/}
                             {/*    src=""*/}
