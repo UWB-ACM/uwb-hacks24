@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
 import { Dialog, Popover} from '@headlessui/react'
 import {
     Bars3Icon,
@@ -13,12 +13,7 @@ import CountdownTimer from "./CountDownTimer";
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [headerOpacity, setHeaderOpacity] = useState(false);
 
-    function handleHeaderOpacity(){
-        const currentScrollPos = window.pageYOffset;
-        setHeaderOpacity(currentScrollPos > 1);
-    }
 
     function handleCloseMenu() {
         setMobileMenuOpen(false);
@@ -36,10 +31,6 @@ export default function Header() {
         setIsHovered(false);
     };
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleHeaderOpacity);
-        return () => window.removeEventListener('scroll', handleHeaderOpacity);
-      }, []);
 
     if (location.pathname === "/uwb-hacks23/Contact" || location.pathname === "/uwb-hacks23/Registration" || location.pathname === "/uwb-hacks23/Login") {
         return (
@@ -81,13 +72,13 @@ export default function Header() {
         <header className={`bg-white`}>
             <nav className="mx-auto flex max-w-7xl items-center justify-between  lg:px-8 h-20" aria-label="Global">
                 <div className="flex lg:flex-1  h-full">
-                    <span className="mt-4 mx-4 text-purple text-2xl font-bold ">UWB Hacks</span>
+                    <span className="mt-4 mx-4 text-purple text-2xl font-bold ">UWB Hacks 2023</span>
                     {/*<img className="h-full" src=" " alt="UWB Hacks Logo" />*/}
                 </div>
                 <div className="flex lg:hidden ">
                     <button
                         type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:bg-light-purple mr-3.5"
+                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5  hover:bg-light-purple mr-3.5"
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
@@ -100,7 +91,7 @@ export default function Header() {
                           smooth={'easeInOutQuint'}
                           duration={200}
                           offset={0}
-                          className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                          className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10  hover:bg-light-purple h-full transition duration-500">
                             <div className="text-black h-full mt-4">About</div>            
                     </Link>
                     <Link to="trackSection"
@@ -109,13 +100,6 @@ export default function Header() {
                           offset={-10}
                           className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
                             <div className="text-black h-full mt-4">Tracks</div>            
-                    </Link>
-                    <Link to="sponsorSection"
-                          smooth={'easeInOutQuint'}
-                          duration={200}
-                          offset={-10}
-                          className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
-                            <div className="text-black h-full mt-4">Sponsors</div>            
                     </Link>
                     <Link to="faqSection"
                           smooth={'easeInOutQuint'}
@@ -141,10 +125,10 @@ export default function Header() {
 
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <div className="fixed inset-0 " />
-                <Dialog.Panel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <Dialog.Panel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
-                        <span className="mt-4 text-purple text-2xl font-bold ">UWB Hacks</span>
+                        <span className="mt-4 text-purple text-2xl font-bold ">UWB Hacks 2023</span>
                             {/*<img*/}
                             {/*    className="h-8 w-auto"*/}
                             {/*    src=""*/}
@@ -153,7 +137,7 @@ export default function Header() {
                         </a>
                         <button
                             type="button"
-                            className="-m-2.5 rounded-md p-2.5 text-gray-700 hover:bg-light-purple"
+                            className="-m-2.5 rounded-md p-2.5  hover:bg-light-purple"
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             <span className="sr-only">Close menu</span>
@@ -168,7 +152,7 @@ export default function Header() {
                                     smooth={'easeInOutQuint'}
                                     duration={200}
                                     offset={0}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow cursor-pointer"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
                                     About
@@ -178,41 +162,31 @@ export default function Header() {
                                     smooth={'easeInOutQuint'}
                                     duration={200}
                                     offset={-10}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow cursor-pointer"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
                                     Tracks
-                                </Link>
-                                <Link
-                                    to="sponsorSection"
-                                    smooth={'easeInOutQuint'}
-                                    duration={200}
-                                    offset={-10}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow cursor-pointer"
-                                    onClick={handleCloseMenu}
-                                >
-                                    Sponsors
                                 </Link>
                                 <Link
                                     to="faqSection"
                                     smooth={'easeInOutQuint'}
                                     duration={200}
                                     offset={-10}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow cursor-pointer"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
                                     FAQ
                                 </Link>
                                 <NavLink
                                     to="/uwb-hacks23/Contact"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow"
                                     onClick={handleCloseMenu}
                                 >
                                     Contact
                                 </NavLink>
                                 <NavLink
                                     to="/uwb-hacks23/Registration"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow"
                                     onClick={handleCloseMenu}
                                 >
                                     Registration
@@ -220,7 +194,7 @@ export default function Header() {
                                 {/*<div className="py-6">*/}
                                 {/*    <a*/}
                                 {/*        href="#"*/}
-                                {/*        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"*/}
+                                {/*        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 hover:text-yellow"*/}
                                 {/*    >*/}
                                 {/*        Log in*/}
                                 {/*    </a>*/}
