@@ -163,33 +163,22 @@ export default function Header() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
-                                <NavLink
-                                    to="/uwb-hacks23"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
+                                <Link
+                                    to="aboutSection"
+                                    smooth={'easeInOutQuint'}
+                                    duration={200}
+                                    offset={-80}
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
-                                    Home
-                                </NavLink>
-                                <NavLink
-                                    to="/uwb-hacks23/Registration"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
-                                    onClick={handleCloseMenu}
-                                >
-                                    Registration
-                                </NavLink>
-                                <NavLink
-                                    to="/uwb-hacks23/Contact"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
-                                    onClick={handleCloseMenu}
-                                >
-                                    Contact
-                                </NavLink>
+                                    About
+                                </Link>
                                 <Link
                                     to="trackSection"
                                     smooth={'easeInOutQuint'}
                                     duration={200}
                                     offset={-80}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
                                     Tracks
@@ -199,7 +188,7 @@ export default function Header() {
                                     smooth={'easeInOutQuint'}
                                     duration={200}
                                     offset={-80}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
                                     Sponsors
@@ -209,12 +198,25 @@ export default function Header() {
                                     smooth={'easeInOutQuint'}
                                     duration={200}
                                     offset={-80}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
                                     FAQ
                                 </Link>
-
+                                <NavLink
+                                    to="/uwb-hacks23/Contact"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
+                                    onClick={handleCloseMenu}
+                                >
+                                    Contact
+                                </NavLink>
+                                <NavLink
+                                    to="/uwb-hacks23/Registration"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-yellow"
+                                    onClick={handleCloseMenu}
+                                >
+                                    Registration
+                                </NavLink>
                                 {/*<div className="py-6">*/}
                                 {/*    <a*/}
                                 {/*        href="#"*/}
