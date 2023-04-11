@@ -1,33 +1,81 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 function TrackCard(props) {
+  const [isClicked, setIsClicked] = useState(false);
+  const [topY, setTopY] = useState();
+  const [topX, setTopX] = useState();
+  const [bottomY, setBottomY] = useState();
+  const [bottomX, setBottomX] = useState();
+  const [bottomZ, setBottomZ] = useState();
+  const [transitionStatus, setTransitionStatus] = useState('notDone');
+
+  useEffect(() => {
+    if (isClicked) {
+      setTransitionStatus('notDone');
+      setTopY("translate-y-96");
+      setTopX("translate-x-4");
+
+      setBottomY("translate-y-[-8px]");
+      setBottomX("translate-x-[-8px]");
+
+      setTimeout(() => {
+        setBottomZ("z-10");
+      }, 300);
+
+      setTimeout(() => {
+        setTopY("translate-y-4");
+      }, 450);
+
+      setTimeout(() => {
+        setTransitionStatus('done');
+      }, 500);
+    } else {
+      setTransitionStatus('notDone');
+      setTopY("translate-y-96");
+      setBottomY("translate-y-2");
+      setBottomX("translate-x-2");
+      setTimeout(() => {
+        setBottomZ("z-0");
+      }, 100);
+
+      setTimeout(() => {
+        setTopY("translate-y-0");
+        setTopX("translate-x-0");
+      }, 500);
+
+      setTimeout(() => {
+        setTransitionStatus('done');
+      }, 600);
+    }
+  }, [isClicked]);
+
+  function handleClick() {
+    if (transitionStatus === 'notDone') {
+      return;
+    }
+    setIsClicked(!isClicked);
+  }
+
   return (
-      <div className="items-center justify-center bg-slate-100 pt-2 pb-3 pl-4 pr-4">
-        <div className="group h-96 w-80 [perspective:1000px]">
-
-          <div className="border-1 rounded-xl relative h-full w-full transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-            <div className="absolute inset-0">
-              <img className="h-full w-full rounded-xl object-contain opacity-40 pt-2 pb-2" src={props.backgroundImage} alt="" />
-            </div>
-
-            <div className="absolute inset-0 h-full w-full rounded-xl [backface-visibility:hidden] [transform:rotateX(0deg)]">
-              <div className="flex flex-col items-center justify-center h-full w-full bg-white rounded-xl p-4 ">
-                <div className="font-bold text-3xl">{props.cardTitle}</div>
-                <img className="h-full w-full rounded-xl object-contain " src={props.backgroundImage} alt="" />
-              </div>
-            </div>
-            
-            <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-              <div className="pt-4 min-h-full flex-col items-center justify-center">
-                <div className="font-bold text-3xl pb-2 text-center ">{props.cardTitle}</div>
-                <div className="text-1xl text-left">{props.children}</div>
-              </div>
-            </div>
-          </div>
+    <div className="relative w-80 h-96 mx-10 my-10" onClick={handleClick}>
+      <div
+        className={`absolute h-full w-full left-2 top-2 bg-white rounded-lg  transition-all duration-500 transform border-2 ${bottomZ} ${bottomY} ${bottomX} cursor-pointer`}
+      >
+        <div className="flex flex-col items-center  h-full w-full  rounded-xl p-4 ">
+                <div className="font-semibold text-3xl">{props.cardTitle}</div>
+                <div className=" text-1xl">{props.children}</div>
         </div>
       </div>
+      <div
+        className={`absolute h-full w-full rounded-lg bg-white  transition-all duration-500 transform border-2 ${topY} ${topX} cursor-pointer`}
+      >
+        <div className="flex flex-col items-center justify-center h-full w-full  rounded-xl p-4 ">
+                <div className="font-semibold text-3xl">{props.cardTitle}</div>
+                <img className="h-full w-full rounded-xl object-contain " src={props.backgroundImage} alt="" />
+        </div>
+      </div>
+    </div>
   );
 }
 
-
-export default TrackCard
+export default TrackCard;

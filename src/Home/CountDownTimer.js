@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Home.css';
 
 function CountdownTimer() {
-    const [countdown, setCountdown] = useState(Date.parse('2023-04-16T00:00:00') - Date.now());
+    const [countdown, setCountdown] = useState(Date.parse('2023-05-05T00:00:00') - Date.now());
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -18,7 +18,7 @@ function CountdownTimer() {
 
     return (
         <div className="countdown-timer-box pt-2">
-            <marquee>{days} days, {hours} hours, {minutes} minutes until 4/16 (Deadline for website)</marquee>
+            <marquee>{days} days, {hours} hours, {minutes} minutes until Hacking</marquee>
         </div>
     );
 }
