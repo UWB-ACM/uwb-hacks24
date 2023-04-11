@@ -18,7 +18,7 @@ function Home() {
             <div className="w-full Home">
                 <Tracks />
                 <FAQ />
-                {/*<Particles className="particles" options={options} init={particlesInit} />*/}
+                <Particles className="particles" options={options} init={particlesInit} />
                 <ScrollToTopButton/>
             </div>
         </>

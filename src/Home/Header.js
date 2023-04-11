@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
 import { Dialog, Popover} from '@headlessui/react'
 import {
     Bars3Icon,
@@ -13,12 +13,7 @@ import CountdownTimer from "./CountDownTimer";
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [headerOpacity, setHeaderOpacity] = useState(false);
 
-    function handleHeaderOpacity(){
-        const currentScrollPos = window.pageYOffset;
-        setHeaderOpacity(currentScrollPos > 1);
-    }
 
     function handleCloseMenu() {
         setMobileMenuOpen(false);
@@ -36,10 +31,6 @@ export default function Header() {
         setIsHovered(false);
     };
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleHeaderOpacity);
-        return () => window.removeEventListener('scroll', handleHeaderOpacity);
-      }, []);
 
     if (location.pathname === "/uwb-hacks23/Contact" || location.pathname === "/uwb-hacks23/Registration" || location.pathname === "/uwb-hacks23/Login") {
         return (
@@ -78,16 +69,16 @@ export default function Header() {
     }
 
     return (
-        <header className={`sticky transition top-0 z-20 ${headerOpacity ? 'bg-opacity-90  bg-light-gray' : 'bg-opacity-100 bg-white' } duration-50`}>
-            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 h-20" aria-label="Global">
+        <header className={`bg-white`}>
+            <nav className="mx-auto flex max-w-7xl items-center justify-between  lg:px-8 h-20" aria-label="Global">
                 <div className="flex lg:flex-1  h-full">
-                    <span className="sr-only">UWB Hacks</span>
-                    <img className="h-full" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="UWB Hacks Logo" />
+                    <span className="mt-4 mx-4 text-purple text-2xl font-bold ">UWB Hacks 2023</span>
+                    {/*<img className="h-full" src=" " alt="UWB Hacks Logo" />*/}
                 </div>
                 <div className="flex lg:hidden ">
                     <button
                         type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 hover:bg-light-purple"
+                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5  hover:bg-light-purple mr-3.5"
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
@@ -95,47 +86,58 @@ export default function Header() {
                     </button>
                 </div>
 
-                <Popover.Group className="hidden lg:flex lg:gap-x-12">
-                    
-                    <NavLink to="/uwb-hacks23" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
-                        Home
-                    </NavLink>
-                    <NavLink to="/uwb-hacks23/Registration" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
-                        Registration
-                    </NavLink>
-                    <NavLink to="/uwb-hacks23/Contact" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
-                        Contact
-                    </NavLink>
+                <Popover.Group className="hidden lg:flex h-full items-center justify-between">
+                    <Link to="aboutSection"
+                          smooth={'easeInOutQuint'}
+                          duration={200}
+                          offset={0}
+                          className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10  hover:bg-light-purple h-full transition duration-500">
+                            <div className="text-black h-full mt-4">About</div>            
+                    </Link>
+                    <Link to="trackSection"
+                          smooth={'easeInOutQuint'}
+                          duration={200}
+                          offset={-10}
+                          className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                            <div className="text-black h-full mt-4">Tracks</div>            
+                    </Link>
                     <Link to="faqSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
                           offset={-10}
-                          className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer hover:text-yellow">
-                        FAQ
+                          className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                            <div className="text-black h-full mt-4">FAQ</div>            
                     </Link>
-                    <div className="hidden lg:flex lg:flex-1 lg:justify-end ">
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">
-                            Log In
-                        </a>
-                    </div>
+                    <NavLink to="/uwb-hacks23/Contact" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                            <div className="text-black h-full mt-4">Contact</div>   
+                    </NavLink>
+                    <NavLink to="/uwb-hacks23/Registration" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                            <div className="text-black h-full mt-4">Registration</div>   
+                    </NavLink>
+
+                    {/*<div className="hidden lg:flex lg:flex-1 lg:justify-end ">*/}
+                    {/*    <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">*/}
+                    {/*        Log In*/}
+                    {/*    </a>*/}
+                    {/*</div>*/}
                 </Popover.Group>
             </nav>
 
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <div className="fixed inset-0 " />
-                <Dialog.Panel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <Dialog.Panel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
-                            <span className="sr-only">Your Company</span>
-                            <img
-                                className="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                alt=""
-                            />
+                        <span className="mt-4 text-purple text-2xl font-bold ">UWB Hacks 2023</span>
+                            {/*<img*/}
+                            {/*    className="h-8 w-auto"*/}
+                            {/*    src=""*/}
+                            {/*    alt="Uwb Hacks 23"*/}
+                            {/*/>*/}
                         </a>
                         <button
                             type="button"
-                            className="-m-2.5 rounded-md p-2.5 text-gray-700 hover:bg-light-purple"
+                            className="-m-2.5 rounded-md p-2.5  hover:bg-light-purple"
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             <span className="sr-only">Close menu</span>
@@ -145,45 +147,58 @@ export default function Header() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
-                                <NavLink
-                                    to="/uwb-hacks23"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                <Link
+                                    to="aboutSection"
+                                    smooth={'easeInOutQuint'}
+                                    duration={200}
+                                    offset={0}
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
-                                    Home
-                                </NavLink>
-                                <NavLink
-                                    to="/uwb-hacks23/Registration"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    About
+                                </Link>
+                                <Link
+                                    to="trackSection"
+                                    smooth={'easeInOutQuint'}
+                                    duration={200}
+                                    offset={-10}
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
-                                    Registration
-                                </NavLink>
-                                <NavLink
-                                    to="/uwb-hacks23/Contact"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                    onClick={handleCloseMenu}
-                                >
-                                    Contact
-                                </NavLink>
+                                    Tracks
+                                </Link>
                                 <Link
                                     to="faqSection"
                                     smooth={'easeInOutQuint'}
                                     duration={200}
                                     offset={-10}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
                                     FAQ
                                 </Link>
-                                <div className="py-6">
-                                    <a
-                                        href="#"
-                                        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                    >
-                                        Log in
-                                    </a>
-                                </div>
+                                <NavLink
+                                    to="/uwb-hacks23/Contact"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow"
+                                    onClick={handleCloseMenu}
+                                >
+                                    Contact
+                                </NavLink>
+                                <NavLink
+                                    to="/uwb-hacks23/Registration"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow"
+                                    onClick={handleCloseMenu}
+                                >
+                                    Registration
+                                </NavLink>
+                                {/*<div className="py-6">*/}
+                                {/*    <a*/}
+                                {/*        href="#"*/}
+                                {/*        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 hover:text-yellow"*/}
+                                {/*    >*/}
+                                {/*        Log in*/}
+                                {/*    </a>*/}
+                                {/*</div>*/}
                             </div>
                         </div>
                     </div>
