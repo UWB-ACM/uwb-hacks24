@@ -164,6 +164,9 @@ function Register() {
                         <option value="discord">
                             Discord
                         </option>
+                        <option value="devpost">
+                            Devpost
+                        </option>
                         <option value="word of mouth">
                             Word of Mouth
                         </option>
