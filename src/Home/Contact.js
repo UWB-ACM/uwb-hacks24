@@ -38,7 +38,7 @@ export const ContactUs = () => {
                     <label htmlFor="email" className="font-SecularOne block text-2xl  leading-6 text-white pt-4">
                         Email
                     </label>
-                    <input type="email" name="user_email" className="relative mt-1 rounded-md shadow-sm border-1 text-xl w-full" required minLength="1"/>
+                    <input type="email" name="email" className="relative mt-1 rounded-md shadow-sm border-1 text-xl w-full" />
 
                     <label htmlFor="message" className="font-SecularOne block text-2xl  leading-6 text-white pt-4" >
                         Message
