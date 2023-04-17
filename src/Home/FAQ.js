@@ -20,7 +20,7 @@ function FAQ() {
                             For teamwork on your project, communication methods are entirely up to you, but we recommend Zoom, Microsoft Teams, or Discord.
                             </CollapseButton>
                             <CollapseButton buttonID="faqb3" buttonText= "Do I have to be a UWB student to register?"> 
-                            Yes, however, we accept all students from not only high schools, community colleges, and universities, but non-traditional institutions like boot camps and academies as well. 
+                            No, we accept all students from high schools, community colleges, and universities. Hackers from non-traditional institutions like boot camps and academies are welcome as well. 
                             </CollapseButton>
                             <CollapseButton buttonID="faqb4" buttonText= "How much coding experience do I need to have?"> 
                             You do not need to have any prior coding experience. We are welcoming students of all experience and skill levels. Hackathons are a great opportunity to work with people of all skill levels.
