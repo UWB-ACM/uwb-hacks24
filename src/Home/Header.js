@@ -112,14 +112,8 @@ export default function Header() {
                             <div className="text-black h-full mt-4">Contact</div>   
                     </NavLink>
                     <NavLink to="/uwb-hacks23/Registration" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
-                            <div className="text-black h-full mt-4">Registration</div>   
+                            <div className="text-black h-full mt-4">Registration</div>
                     </NavLink>
-
-                    {/*<div className="hidden lg:flex lg:flex-1 lg:justify-end ">*/}
-                    {/*    <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow">*/}
-                    {/*        Log In*/}
-                    {/*    </a>*/}
-                    {/*</div>*/}
                 </Popover.Group>
             </nav>
 
@@ -191,14 +185,6 @@ export default function Header() {
                                 >
                                     Registration
                                 </NavLink>
-                                {/*<div className="py-6">*/}
-                                {/*    <a*/}
-                                {/*        href="#"*/}
-                                {/*        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 hover:text-yellow"*/}
-                                {/*    >*/}
-                                {/*        Log in*/}
-                                {/*    </a>*/}
-                                {/*</div>*/}
                             </div>
                         </div>
                     </div>
