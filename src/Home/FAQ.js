@@ -1,7 +1,7 @@
 import './Home.css';
 import CollapseButton from "./CollapseButton"
 import {NavLink} from "react-router-dom";
-import COC from "./placeholder images/Code_of_Conduct.pdf"
+import COC from "./media/Code_of_Conduct.pdf"
 
 function FAQ() {
         return (
