@@ -20,7 +20,7 @@ function FAQ() {
                             For teamwork on your project, communication methods are entirely up to you, but we recommend Zoom, Microsoft Teams, or Discord.
                             </CollapseButton>
                             <CollapseButton buttonID="faqb3" buttonText= "Do I have to be a UWB student to register?"> 
-                            Yes, however, we accept all students from not only high schools, community colleges, and universities, but non-traditional institutions like boot camps and academies as well. 
+                            No, we accept all students from high schools, community colleges, and universities. Hackers from non-traditional institutions like boot camps and academies are welcome as well. 
                             </CollapseButton>
                             <CollapseButton buttonID="faqb4" buttonText= "How much coding experience do I need to have?"> 
                             You do not need to have any prior coding experience. We are welcoming students of all experience and skill levels. Hackathons are a great opportunity to work with people of all skill levels.
@@ -38,14 +38,14 @@ function FAQ() {
                             </CollapseButton>
                             <CollapseButton buttonID="faqb8" buttonText= "Are there any rules?"> 
                             Behave Appropriately: This is an event on a university campus, and thus you should act as you would on campus. Inappropriate behavior or posts are not acceptable under any circumstances. <br/><br/>
-                            <a className="font-bold text-purple" href=''>Read our code of conduct</a>
+                            <a className="font-bold text-purple" target="_blank" href='/src/Code_of_Conduct.pdf'>Read our code of conduct</a>
                             </CollapseButton>
                             <CollapseButton buttonID="faqb9" buttonText= "Does UWB Hacks In Person cost money?"> 
                             This event is entirely free! No sign up or registration fees required. <br/><br/>
-                            Parking on campus does cost $1.75 per hour and is on an hourly basis. For more information about parking, check <a className="font-bold text-purple" href='https://www.uwb.edu/commuter-services/parking/parking-permits#daily-parking '>here</a>
+                            Parking on campus does cost $1.75 per hour and is on an hourly basis. For more information about parking, check <a className="font-bold text-purple" target="_blank" href='https://www.uwb.edu/commuter-services/parking/parking-permits#daily-parking '>here</a>
                             </CollapseButton>
                             <CollapseButton buttonID="faqb10" buttonText= "What if I have a question that wasn't answered in the FAQ?"> 
-                            Please feel free to reach out to event organizers in the “#organizer-discussion” channel of the UWB Hacks In Person Discord or email: <span className="break-words">uwbacmhackinperson2023@gmail.com</span>
+                            Please feel free to reach out to event organizers in the “#organizer-discussion” channel of the UWB Hacks In Person Discord or fill out the <a className="font-bold text-purple" href="/uwb-hacks23/Contact">contact form</a>.
                             </CollapseButton>
 
 
