@@ -1,6 +1,7 @@
 import './Home.css';
 import CollapseButton from "./CollapseButton"
 import {NavLink} from "react-router-dom";
+import COC from "./placeholder images/Code_of_Conduct.pdf"
 
 function FAQ() {
         return (
@@ -39,7 +40,7 @@ function FAQ() {
                             </CollapseButton>
                             <CollapseButton buttonID="faqb8" buttonText= "Are there any rules?"> 
                             Behave Appropriately: This is an event on a university campus, and thus you should act as you would on campus. Inappropriate behavior or posts are not acceptable under any circumstances. <br/><br/>
-                            <a className="font-bold text-purple" target="_blank" href='/src/Code_of_Conduct.pdf'>Read our code of conduct</a>
+                            <a className="font-bold text-purple" target="_blank" href={COC}>Read our code of conduct</a>
                             </CollapseButton>
                             <CollapseButton buttonID="faqb9" buttonText= "Does UWB Hacks In Person cost money?"> 
                             This event is entirely free! No sign up or registration fees required. <br/><br/>
