@@ -67,7 +67,7 @@ export default function HeaderSection() {
                     </h1>
                 </div>
                 <div className="flex flex-col items-center justify-center mt-5 mx-auto text-center">
-                        <span className="text-2xl font-semibold text-purple">May 5th - 7th @ UWB ARC</span>
+                        <span className="text-2xl font-semibold text-purple">May 5th - 7th @ <a target="_blank" href="https://www.uwb.edu/arc" className="hover:text-yellow">UWB ARC</a></span>
                 </div>
             </div>
         </>

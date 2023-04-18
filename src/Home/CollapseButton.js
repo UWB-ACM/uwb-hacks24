@@ -27,7 +27,7 @@ function CollapseButton(props) {
           id={props.buttonID}
           data-te-collapse-item
         >
-          <div className="block rounded-lg bg-white p-6">
+          <div className="block rounded-lg bg-white p-6 text-xl font-normal">
             {props.children}
           </div>
         </div>
