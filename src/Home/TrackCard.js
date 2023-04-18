@@ -28,7 +28,7 @@ function TrackCard(props) {
 
       setTimeout(() => {
         setTransitionStatus('done');
-      }, 500);
+      }, 1000);
     } else {
       setTransitionStatus('notDone');
       setTopY("translate-y-96");
@@ -45,7 +45,7 @@ function TrackCard(props) {
 
       setTimeout(() => {
         setTransitionStatus('done');
-      }, 600);
+      }, 1000);
     }
   }, [isClicked]);
 
@@ -57,7 +57,7 @@ function TrackCard(props) {
   }
 
   return (
-    <div className="relative w-80 h-96 mx-10 my-10" onClick={handleClick}>
+    <div className="relative w-80 h-96 mx-10 my-10" onMouseOver={handleClick}>
       <div
         className={`absolute h-full w-full left-2 top-2 bg-light-purple bg-opacity-95 rounded-lg  transition-all duration-500 transform border-2 ${bottomZ} ${bottomY} ${bottomX} cursor-pointer`}
       >
