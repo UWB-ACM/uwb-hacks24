@@ -59,11 +59,11 @@ function TrackCard(props) {
   return (
     <div className="relative w-80 h-96 mx-10 my-10" onClick={handleClick}>
       <div
-        className={`absolute h-full w-full left-2 top-2 bg-white rounded-lg  transition-all duration-500 transform border-2 ${bottomZ} ${bottomY} ${bottomX} cursor-pointer`}
+        className={`absolute h-full w-full left-2 top-2 bg-light-purple bg-opacity-95 rounded-lg  transition-all duration-500 transform border-2 ${bottomZ} ${bottomY} ${bottomX} cursor-pointer`}
       >
         <div className="flex flex-col items-center  h-full w-full  rounded-xl p-4 ">
-                <div className="font-semibold text-3xl">{props.cardTitle}</div>
-                <div className=" text-1xl">{props.children}</div>
+                <div className="font-semibold text-3xl">{}</div>
+                <div className="font-normal text-xl text-center mt-3 text-black">{props.children}</div>
         </div>
       </div>
       <div
