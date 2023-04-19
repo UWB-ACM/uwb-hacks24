@@ -111,9 +111,10 @@ export default function Header() {
                     <NavLink to="/uwb-hacks23/Contact" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
                             <div className="text-black h-full mt-4">Contact</div>   
                     </NavLink>
-                    <NavLink to="/uwb-hacks23/Registration" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                    {/*                     <NavLink to="/uwb-hacks23/Registration" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
                             <div className="text-black h-full mt-4">Registration</div>
-                    </NavLink>
+                    </NavLink>*/}
+
                     <NavLink to="https://uwb-acm-hacks-in-person.devpost.com" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500" target="_blank">
                             <div className="text-black h-full mt-4">Devpost</div>
                     </NavLink>
@@ -182,13 +183,14 @@ export default function Header() {
                                 >
                                     Contact
                                 </NavLink>
-                                <NavLink
+
+                                {/*                                 <NavLink
                                     to="/uwb-hacks23/Registration"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow"
                                     onClick={handleCloseMenu}
                                 >
                                     Registration
-                                </NavLink>
+                                </NavLink>*/}
                                 <NavLink
                                     to="https://uwb-acm-hacks-in-person.devpost.com"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow"
