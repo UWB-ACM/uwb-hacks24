@@ -18,6 +18,9 @@ module.exports = {
       'light-gray': '#fefefe',
       'gray': '#96a1a7',
       'black': '#000000',
+      'googray': '#5F6368',
+
+      
     },
     extend: {},
   },
