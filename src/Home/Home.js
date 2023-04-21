@@ -6,7 +6,9 @@ import options from "./particleConfig"; // configuration of particles
 import FAQ from "./FAQ";
 import './Home.css';
 import ScrollToTopButton from "./ScrollToTopButton"
-import HeaderSection from "./HeaderSection";
+import Hero from "./Hero";
+import About from "./About";
+
 
 function Home() {
     const particlesInit = useCallback(async (engine) => {
@@ -14,8 +16,9 @@ function Home() {
     }, [])
     return (
         <>
-            <HeaderSection />
+            <Hero />
             <div className="w-full Home">
+                <About/>
                 <Tracks />
                 <FAQ />
                 <Particles className="particles" options={options} init={particlesInit} />
