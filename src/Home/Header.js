@@ -72,7 +72,7 @@ export default function Header() {
         <header className={`bg-white`}>
             <nav className="mx-auto flex max-w-7xl items-center justify-between  lg:px-8 h-20" aria-label="Global">
                 <div className="flex lg:flex-1  h-full">
-                    <span className="mt-4 mx-4 text-purple text-2xl font-bold ">UWB Hacks 2023</span>
+                    <span className="mt-4 mx-4 text-light-purple text-2xl font-bold ">UWB Hacks 2023</span>
                     {/*<img className="h-full" src=" " alt="UWB Hacks Logo" />*/}
                 </div>
                 <div className="flex lg:hidden ">
