@@ -927,7 +927,7 @@ const options = {
                 "height": 1080
             },
             "limit": 0,
-            "value": 100
+            "value": 60
         },
         "opacity": {
             "random": {

@@ -3,7 +3,7 @@ import "./Home.css"
 import CountDownTimer from "./CountDownTimer";
 import {useEffect} from "react";
 
-export default function HeaderSection() {
+export default function Hero() {
     useEffect(() => {
         let index = 0, interval = 1000;
 
@@ -30,7 +30,7 @@ export default function HeaderSection() {
     return (
         <>
             <CountDownTimer/>
-            <div className="h-screen mx-auto py-32 sm:py-48 lg:py-56 bg-white bg-opacity-100" id="aboutSection"
+            <div className="h-screen mx-auto py-32 sm:py-48 lg:py-56 bg-light-gray bg-opacity-50" id="heroSection"
                  style={{
                      backgroundImage: `url("")`,
                      backgroundSize: 'cover',
@@ -38,7 +38,7 @@ export default function HeaderSection() {
                  }}
             >
                 <div className="text-center">
-                    <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                    <h1 className="text-4xl sm:text-6xl font-bold tracking-tight">
                         UWB
                         <span> </span>
                         <span className="magic">
@@ -61,13 +61,13 @@ export default function HeaderSection() {
                                 </svg>
                             </span>
                             <span className="magic-text">
-                                Hacks in Person
+                                Hacks In Person
                             </span>
                         </span>
                     </h1>
                 </div>
-                <div className="flex flex-col items-center justify-center mt-5 mx-auto text-center">
-                        <span className="text-2xl font-semibold text-purple">May 5th - 7th @ <a target="_blank" href="https://www.uwb.edu/arc" className="hover:text-yellow">UWB ARC</a></span>
+                <div className="flex flex-col items-center justify-center mt-3 sm:mt-5 mx-auto text-center">
+                        <span className="text-xl font-semibold text-light-purple sm:text-2xl">May 5th - 7th @ <a target="_blank" href="https://www.uwb.edu/arc" className="hover:text-yellow">UWB ARC</a></span>
                 </div>
             </div>
         </>
