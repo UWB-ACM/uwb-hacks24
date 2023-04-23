@@ -3,7 +3,7 @@ import { faDiscord, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {NavLink, useLocation} from "react-router-dom";
 export default function Footer() {
     const location = useLocation();
-    if (location.pathname !== "/uwb-hacks23") {
+    if (location.pathname !== "/uwb-hacks23" && location.pathname !== "/uwb-hacks23/") {
         return <></>
     }
 
