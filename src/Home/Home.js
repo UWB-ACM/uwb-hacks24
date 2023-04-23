@@ -24,6 +24,7 @@ function Home() {
                 <Particles className="particles" options={options} init={particlesInit} />
                 <ScrollToTopButton/>
             </div>
+
         </>
     );
 }
