@@ -19,6 +19,41 @@ function ScrollToTopButton() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const [shouldRender, setShouldRender] = useState(true);
+
+  useEffect(() => {
+    function handleScroll() {
+      const scrolledToBottom =
+          window.scrollY + window.innerHeight >= document.body.scrollHeight;
+      setShouldRender(!scrolledToBottom);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    setIsSmallScreen(mediaQuery.matches);
+
+    function handleResize(event) {
+      setIsSmallScreen(event.matches);
+    }
+
+    mediaQuery.addEventListener("change", handleResize);
+    return () => {
+      mediaQuery.removeEventListener("change", handleResize);
+    };
+  }, []);
+
+  if (!shouldRender && isSmallScreen) {
+    return <></>
+  }
+
   return (
     <button
       type="button"
