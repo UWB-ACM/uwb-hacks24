@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 export default function Footer() {
     return (
         <footer className="bg-gradient-to-r from-light-purple via-purple to-light-purple h-16 flex justify-center items-center">
-            <div className="mx-auto text-white font-SecularOne font-bold lg:text-3xl md:text-2xl opacity-100">
+            <div className="mx-auto text-white font-SecularOne lg:text-3xl md:text-2xl opacity-100">
                 Follow UWB ACM for More Events!
             </div>
             <NavLink to={"https://discord.gg/7jFyNVCcpH"} className="mx-auto">
