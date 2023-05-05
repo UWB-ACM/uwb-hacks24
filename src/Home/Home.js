@@ -20,7 +20,7 @@ function Home() {
             <div className="w-full Home">
                 <About/>
                 <Tracks />
-                {/*<Schedule />*/}
+                <Schedule />
                 <FAQ />
                 <Particles className="particles" options={options} init={particlesInit} />
                 <ScrollToTopButton/>

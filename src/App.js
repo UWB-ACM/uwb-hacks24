@@ -24,7 +24,7 @@ function App() {
             <Route path="*" element={<Home />} />
             <Route path="/uwb-hacks23" element={<Home />} />
             {/** <Route path="/uwb-hacks23/Registration" element={<Register />} />*/}
-            {/*<Route path="/uwb-hacks23/Schedule" element={<Schedule />} />*/}
+            <Route path="/uwb-hacks23/Schedule" element={<Schedule />} />
             <Route path="/uwb-hacks23/FAQ" element={<FAQ />} />
             <Route path="/uwb-hacks23/Contact" element={<ContactUs />} />
           </Routes>

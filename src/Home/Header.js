@@ -101,13 +101,13 @@ export default function Header() {
                           className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
                             <div className="text-black h-full mt-4">Tracks</div>            
                     </Link>
-                    {/*<Link to="schedule"*/}
-                    {/*      smooth={'easeInOutQuint'}*/}
-                    {/*      duration={200}*/}
-                    {/*      offset={-10}*/}
-                    {/*      className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">*/}
-                    {/*    <div className="text-black h-full mt-4">Schedule</div>*/}
-                    {/*</Link>*/}
+                    <Link to="schedule"
+                          smooth={'easeInOutQuint'}
+                          duration={200}
+                          offset={-10}
+                          className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                        <div className="text-black h-full mt-4">Schedule</div>
+                    </Link>
                     <Link to="faqSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
@@ -176,16 +176,16 @@ export default function Header() {
                                 >
                                     Tracks
                                 </Link>
-                                {/*<Link*/}
-                                {/*    to="schedule"*/}
-                                {/*    smooth={'easeInOutQuint'}*/}
-                                {/*    duration={200}*/}
-                                {/*    offset={-10}*/}
-                                {/*    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow cursor-pointer"*/}
-                                {/*    onClick={handleCloseMenu}*/}
-                                {/*>*/}
-                                {/*    Schedule*/}
-                                {/*</Link>*/}
+                                <Link
+                                    to="schedule"
+                                    smooth={'easeInOutQuint'}
+                                    duration={200}
+                                    offset={-10}
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow cursor-pointer"
+                                    onClick={handleCloseMenu}
+                                >
+                                    Schedule
+                                </Link>
                                 <Link
                                     to="faqSection"
                                     smooth={'easeInOutQuint'}
