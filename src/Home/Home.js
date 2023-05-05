@@ -8,7 +8,7 @@ import './Home.css';
 import ScrollToTopButton from "./ScrollToTopButton"
 import Hero from "./Hero";
 import About from "./About";
-
+import Schedule from "./Schedule";
 
 function Home() {
     const particlesInit = useCallback(async (engine) => {
@@ -20,6 +20,7 @@ function Home() {
             <div className="w-full Home">
                 <About/>
                 <Tracks />
+                {/*<Schedule />*/}
                 <FAQ />
                 <Particles className="particles" options={options} init={particlesInit} />
                 <ScrollToTopButton/>

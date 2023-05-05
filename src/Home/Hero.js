@@ -30,13 +30,7 @@ export default function Hero() {
     return (
         <>
             <CountDownTimer/>
-            <div className="h-screen mx-auto py-32 sm:py-48 lg:py-56 bg-light-gray bg-opacity-50" id="heroSection"
-                 style={{
-                     backgroundImage: `url("")`,
-                     backgroundSize: 'cover',
-                     backgroundPosition: 'center',
-                 }}
-            >
+            <div className="h-screen mx-auto py-32 sm:py-48 lg:py-56 bg-light-gray bg-opacity-50" id="heroSection">
                 <div className="text-center">
                     <h1 className="text-4xl sm:text-6xl font-bold tracking-tight">
                         UWB
