@@ -19,7 +19,7 @@ function Schedule() {
                     <div className="border-1 border-light-purple rounded-xl h-12 my-3 flex justify-center items-center">
                         5:05pm - 6:05pm: Sustainability Workshop
                     </div>
-                    <div className="border-1 border-light-purple rounded-xl h-12 my-1 flex justify-center items-center text-sm">
+                    <div className="border-1 border-light-purple rounded-xl h-12 my-1 flex justify-center items-center text-xs lg:text-sm break-words">
                         6:30pm - 7:30pm: "The Engineering Mindset: From Aerospace to the Artificial Space"
                     </div>
                 </div>
