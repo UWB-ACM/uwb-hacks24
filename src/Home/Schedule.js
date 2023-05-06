@@ -1,11 +1,28 @@
 import './Home.css';
+import {useEffect} from "react";
 
 function Schedule() {
+    const handleIntersection = (entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animated");
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+
+    useEffect(() => {
+        const elements = document.querySelectorAll(".schedule");
+        elements.forEach((element) => observer.observe(element));
+    }, [observer]);
+
     return (
         <div id="schedule" className="h-auto bg-opacity-90 shadow-lg mb-40 bg-light-purple text-center">
             <div className={"font-SecularOne text-6xl text-white pt-4"}>Schedule</div>
             <div className="flex flex-wrap h-auto">
-                <div className="bg-white bg-opacity-50 w-96 h-96 my-3 mx-auto text-center font-semibold border-2 border-light-purple rounded-2xl container">
+                <div id={"schedule-1"} className="bg-white bg-opacity-50 w-96 h-96 my-3 mx-auto text-center font-semibold border-2 border-light-purple rounded-2xl container schedule">
                     <div className={"text-4xl mt-2 text-purple font-SecularOne"}>Fri 5/5</div>
                     <div className="border-1 border-light-purple rounded-xl h-12 my-3 flex justify-center items-center">
                         10:00am - 11:50am: Team Building
@@ -23,7 +40,7 @@ function Schedule() {
                         6:30pm - 7:30pm: "The Engineering Mindset: From Aerospace to the Artificial Space"
                     </div>
                 </div>
-                <div className="bg-white bg-opacity-50 w-96 h-96 my-3 mx-auto text-center font-semibold border-2 border-light-purple rounded-2xl container">
+                <div id={"schedule-2"} className="bg-white bg-opacity-50 w-96 h-96 my-3 mx-auto text-center font-semibold border-2 border-light-purple rounded-2xl container schedule delay-1">
                     <div className={"text-4xl mt-2 text-purple font-SecularOne"}>Sat 5/6</div>
                     <div className="border-1 border-light-purple rounded-xl h-12 my-3 flex justify-center items-center">
                         9:00am - 12:00pm: Coding
@@ -41,7 +58,7 @@ function Schedule() {
                         3:45 pm - 4:00 pm: Wrap-up
                     </div>
                 </div>
-                <div className="bg-white bg-opacity-50 w-96 h-96 my-3 mx-auto text-center font-semibold border-2 border-light-purple rounded-2xl container">
+                <div id={"schedule-3"} className="bg-white bg-opacity-50 w-96 h-96 my-3 mx-auto text-center font-semibold border-2 border-light-purple rounded-2xl container schedule delay-2">
                     <div className={"text-4xl mt-2 text-purple font-SecularOne"}>Sun 5/7</div>
                     <div className="border-1 border-light-purple rounded-xl h-12 my-3 flex justify-center items-center">
                         10:00 am - 10:30 am: Closing ceremony
