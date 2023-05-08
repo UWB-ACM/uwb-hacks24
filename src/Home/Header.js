@@ -70,9 +70,9 @@ export default function Header() {
 
     return (
         <header className={`bg-white`}>
-            <nav className="mx-auto flex max-w-7xl items-center justify-between  lg:px-8 h-20" aria-label="Global">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between  lg:px-8 h-[84px]" aria-label="Global">
                 <div className="flex lg:flex-1  h-full">
-                    <span className="mt-4 mx-4 text-light-purple text-2xl font-bold ">UWB Hacks 2023</span>
+                    <span className="mt-4 mx-4 text-light-purple text-2xl font-bold break-normal whitespace-nowrap">UWB Hacks 2023</span>
                     {/*<img className="h-full" src=" " alt="UWB Hacks Logo" />*/}
                 </div>
                 <div className="flex lg:hidden ">
@@ -92,34 +92,44 @@ export default function Header() {
                           duration={200}
                           offset={0}
                           className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10  hover:bg-light-purple h-full transition duration-500">
-                            <div className="text-black h-full mt-4">About</div>            
+                            <div className="text-black h-full mt-4 flex flex-row items-center pb-[54px] ">About</div>            
                     </Link>
                     <Link to="trackSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
                           offset={-10}
                           className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
-                            <div className="text-black h-full mt-4">Tracks</div>            
+                            <div className="text-black h-full mt-4 flex flex-row items-center pb-[54px]">Tracks</div>            
+                    </Link>
+                    <Link to="schedule"
+                          smooth={'easeInOutQuint'}
+                          duration={200}
+                          offset={-10}
+                          className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                        <div className="text-black h-full mt-4 flex flex-row items-center pb-[54px]">Schedule</div>
                     </Link>
                     <Link to="faqSection"
                           smooth={'easeInOutQuint'}
                           duration={200}
                           offset={-10}
                           className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
-                            <div className="text-black h-full mt-4">FAQ</div>            
+                            <div className="text-black h-full mt-4 flex flex-row items-center pb-[54px]">FAQ</div>            
                     </Link>
                     <NavLink to="/uwb-hacks23/Contact" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
-                            <div className="text-black h-full mt-4">Contact</div>   
+                            <div className="text-black h-full mt-4 flex flex-row items-center pb-[54px]">Contact</div>   
                     </NavLink>
                     {/*                     <NavLink to="/uwb-hacks23/Registration" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
                             <div className="text-black h-full mt-4">Registration</div>
                     </NavLink>*/}
 
                     <NavLink to="https://uwb-acm-hacks-in-person.devpost.com" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500" target="_blank">
-                            <div className="text-black h-full mt-4">Devpost</div>
+                            
+                            <div className="text-black h-full mt-4 flex flex-row items-center pb-[54px] ">Devpost <svg className="h-3 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> {/*<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->*/}<path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg> </div>
+                            
+                            
                     </NavLink>
                     <NavLink to="https://discord.gg/aADBZChg2s" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500" target="_blank">
-                            <div className="text-black h-full mt-4">Discord</div>
+                            <div className="text-black h-full mt-4 flex flex-row items-center pb-[54px]">Discord <svg className="h-3 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">{/*<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->*/}<path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></div>
                     </NavLink>
 
                 </Popover.Group>
@@ -170,6 +180,16 @@ export default function Header() {
                                     Tracks
                                 </Link>
                                 <Link
+                                    to="schedule"
+                                    smooth={'easeInOutQuint'}
+                                    duration={200}
+                                    offset={-10}
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow cursor-pointer"
+                                    onClick={handleCloseMenu}
+                                >
+                                    Schedule
+                                </Link>
+                                <Link
                                     to="faqSection"
                                     smooth={'easeInOutQuint'}
                                     duration={200}
@@ -184,7 +204,7 @@ export default function Header() {
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow"
                                     onClick={handleCloseMenu}
                                 >
-                                    Contact
+                                    Contact 
                                 </NavLink>
 
                                 {/*                                 <NavLink
@@ -200,7 +220,7 @@ export default function Header() {
                                     onClick={handleCloseMenu}
                                     target="_blank"
                                 >
-                                    Devpost
+                                    Devpost 
                                 </NavLink>
                                 <NavLink
                                     to="https://discord.gg/aADBZChg2s"

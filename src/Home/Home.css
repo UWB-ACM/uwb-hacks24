@@ -99,3 +99,36 @@ h1 > .magic > .magic-text{
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
+
+.schedule {
+  opacity: 0;
+}
+
+.schedule.animated {
+  animation: moveright 0.5s linear forwards;
+}
+
+.schedule.animated:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.schedule.animated:nth-child(3) {
+  animation-delay: 1s;
+}
+@media (max-width: 640px) {
+  .schedule.animated:nth-child(2),
+  .schedule.animated:nth-child(3) {
+    animation-delay: 0s;
+  }
+}
+
+
+@keyframes moveright {
+  0% {
+    opacity: 50%;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

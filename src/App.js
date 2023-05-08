@@ -6,6 +6,7 @@ import React, {useEffect} from "react";
 import Header from "./Home/Header"
 import Footer from "./Home/Footer"
 import {ContactUs} from "./Home/Contact";
+import Schedule from "./Home/Schedule";
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
             <Route path="*" element={<Home />} />
             <Route path="/uwb-hacks23" element={<Home />} />
             {/** <Route path="/uwb-hacks23/Registration" element={<Register />} />*/}
+            <Route path="/uwb-hacks23/Schedule" element={<Schedule />} />
             <Route path="/uwb-hacks23/FAQ" element={<FAQ />} />
             <Route path="/uwb-hacks23/Contact" element={<ContactUs />} />
           </Routes>
