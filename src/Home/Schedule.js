@@ -21,7 +21,7 @@ function Schedule() {
     return (
         <div id="schedule" className="h-auto bg-opacity-90 shadow-lg mb-40 bg-light-purple text-center">
             <div className={"font-SecularOne text-6xl text-white pt-4"}>Schedule</div>
-            <div className="flex flex-wrap h-auto">
+            <div className="flex flex-wrap h-auto pb-4">
                 <div id={"schedule-1"} className="bg-white bg-opacity-50 w-96 h-96 my-3 mx-auto text-center font-semibold border-2 border-light-purple rounded-2xl container schedule">
                     <div className={"text-4xl mt-2 text-purple font-SecularOne"}>Fri 5/5</div>
                     <div className="border-1 border-light-purple rounded-xl h-12 my-3 flex justify-center items-center">
