@@ -36,6 +36,7 @@ function CountdownTimer() {
 
     }, [playMarquee]);
 
+    /*
     if (countdown < 0) {
         if (endTimer < 0) {
             return (
@@ -52,10 +53,13 @@ function CountdownTimer() {
             );
         }
     }
-
+            <div className="countdown-timer-box py-2">
+            <Marquee play={playMarquee} gradient={false} speed={Math.log(window.screen.width) *10} onCycleComplete={handleMarquee}>{days} days, {hours} hours, {minutes} minutes until Hacking begins! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
+        </div>
+    */
     return (
         <div className="countdown-timer-box py-2">
-            <Marquee play={playMarquee} gradient={false} speed={Math.log(window.screen.width) *10} onCycleComplete={handleMarquee}>{days} days, {hours} hours, {minutes} minutes until Hacking begins! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
+            <Marquee play={playMarquee} gradient={false} speed={Math.log(window.screen.width) *10} onCycleComplete={handleMarquee}>Hacking has Ended! Thanks for Attending! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
         </div>
     );
 }
