@@ -59,7 +59,7 @@ function CountdownTimer() {
     */
     return (
         <div className="countdown-timer-box py-2">
-            <Marquee play={playMarquee} gradient={false} speed={Math.log(window.screen.width) *10} onCycleComplete={handleMarquee}>Hacking has Ended! Thanks for Attending! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
+            <Marquee play={playMarquee} gradient={false} speed={Math.log(window.screen.width) *10} onCycleComplete={handleMarquee}>Hacking has ended! Thanks for attending! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
         </div>
     );
 }
