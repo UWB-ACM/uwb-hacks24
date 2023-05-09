@@ -104,7 +104,7 @@ export default function Header() {
                     <Link to="schedule"
                           smooth={'easeInOutQuint'}
                           duration={200}
-                          offset={-10}
+                          offset={0}
                           className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
                         <div className="text-black h-full mt-4 flex flex-row items-center pb-[54px]">Schedule</div>
                     </Link>
@@ -183,7 +183,7 @@ export default function Header() {
                                     to="schedule"
                                     smooth={'easeInOutQuint'}
                                     duration={200}
-                                    offset={-10}
+                                    offset={0}
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow cursor-pointer"
                                     onClick={handleCloseMenu}
                                 >
