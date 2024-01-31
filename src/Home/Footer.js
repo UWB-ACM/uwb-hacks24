@@ -9,8 +9,9 @@ export default function Footer() {
     }
 
     return (
-        <footer style={{
-            background: '#9370d8',
+        <footer 
+        className = 'bg-gradient-to-r from-light-purple via-purple to-light-purple'
+        style={{
             height: 'auto',
             display: 'flex',
             justifyContent: 'center',
@@ -45,7 +46,7 @@ export default function Footer() {
                     <div>FAQ</div>            
                 </Link>
             </div>*/}
-            <div style={{margin: '55px 7% 0 7%',}}>
+            <div style={{margin: '55px 9% 0 9%',}}>
                 <div 
                 className='font-SecularOne'
                 style={{
@@ -78,7 +79,7 @@ export default function Footer() {
                 </div>
             </div>
             {/* The contact column is a placeholder column for now */}
-            <div style={{margin: '55px 7% 0 7%', color: 'white'}}>
+            <div style={{margin: '55px 9% 0 9%', color: 'white'}}>
                 <NavLink to="/uwb-hacks23/Contact" className='hover:text-white'>
                     <div className='font-SecularOne' style={{fontSize: '24px'}}>Contact Us</div>  
                     <textarea
@@ -97,7 +98,7 @@ export default function Footer() {
 
             <style>
                 {`
-                @media (max-width: 600px) {
+                @media (max-width: 700px) {
                     footer {
                         flex-direction: column;
                         align-items: center;
