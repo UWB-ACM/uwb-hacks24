@@ -25,6 +25,12 @@
   --violet: #ac82ff;
   --yellow: #ffd801;
   --orange: #ff7f50;
+  --futuristic-dark-blue: #0a0f0d;
+  --futuristic-cyan: #7efeff;
+  --futuristic-purple: #8a3ff5;
+  --futuristic-violet: #b36fff;
+  --futuristic-pink: #ff218e;
+  --futuristic-bright-blue: #4d9eff;
 }
 
 @keyframes background-pan {

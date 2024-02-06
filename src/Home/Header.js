@@ -10,6 +10,7 @@ import {useLocation} from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faRocket} from "@fortawesome/free-solid-svg-icons";
 import CountdownTimer from "./CountDownTimer";
+import uwbHacksLogo from './media/uwbhacksai2024.png';
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -71,10 +72,9 @@ export default function Header() {
     return (
         <header className={`bg-white`}>
             <nav className="mx-auto flex max-w-7xl items-center justify-between  lg:px-8 h-[84px]" aria-label="Global">
-                <div className="flex lg:flex-1  h-full">
-                    <span className="mt-4 mx-4 text-light-purple text-2xl font-bold break-normal whitespace-nowrap">UWB Hacks 2023</span>
-                    {/*<img className="h-full" src=" " alt="UWB Hacks Logo" />*/}
-                </div>
+                <div className="flex lg:flex-1 h-full items-center"> {/* Use items-center to vertically center your image */}
+                    <img className="h-16 md:h-28" src={uwbHacksLogo} alt="UWB Hacks Logo" />
+                </div>  
                 <div className="flex lg:hidden ">
                     <button
                         type="button"
@@ -140,7 +140,7 @@ export default function Header() {
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
-                        <span className="mt-4 text-purple text-2xl font-bold ">UWB Hacks 2023</span>
+                        <span className="mt-4 text-purple text-2xl font-bold ">UWB Hacks 2024</span>
                             {/*<img*/}
                             {/*    className="h-8 w-auto"*/}
                             {/*    src=""*/}

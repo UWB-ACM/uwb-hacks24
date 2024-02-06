@@ -55,13 +55,13 @@ export default function Hero() {
                                 </svg>
                             </span>
                             <span className="magic-text">
-                                Hacks In Person
+                                Theme Unannounced
                             </span>
                         </span>
                     </h1>
                 </div>
                 <div className="flex flex-col items-center justify-center mt-3 sm:mt-5 mx-auto text-center">
-                        <span className="text-xl font-semibold text-light-purple sm:text-2xl">May 5th - 7th @ <a target="_blank" href="https://www.uwb.edu/arc" className="hover:text-yellow">UWB ARC</a></span>
+                        <span className="text-xl font-semibold text-light-purple sm:text-2xl">2024 @ <a target="_blank" href="https://www.uwb.edu/arc" className="hover:text-yellow">UWB ARC</a></span>
                 </div>
             </div>
         </>
