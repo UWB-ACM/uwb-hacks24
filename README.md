@@ -1,6 +1,8 @@
 This was the website for UWB Hacks in Person 2023... but we are now converting it to 2024!
+
 Old 2023 link: https://uwb-acm.github.io/uwb-hacks23/
-2024 Link: None
+
+2024 Link: None. WIP.
 
 ## Assigned Sections:
 
