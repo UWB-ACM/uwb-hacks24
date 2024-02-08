@@ -38,7 +38,9 @@
 }
 
 @keyframes scale {
-  from, to {
+
+  from,
+  to {
     transform: scale(0);
   }
 
@@ -57,12 +59,12 @@
   }
 }
 
-h1 > .magic {
+h1>.magic {
   display: inline-block;
   position: relative;
 }
 
-h1 > .magic > .magic-star {
+h1>.magic>.magic-star {
   --size: clamp(20px, 1.5vw, 30px);
 
   animation: scale 700ms ease forwards;
@@ -74,26 +76,24 @@ h1 > .magic > .magic-star {
   width: var(--size);
 }
 
-h1 > .magic > .magic-star > svg {
+h1>.magic>.magic-star>svg {
   animation: rotate 1000ms linear infinite;
   display: block;
   opacity: 0.7;
 }
 
-h1 > .magic > .magic-star > svg > path {
+h1>.magic>.magic-star>svg>path {
   fill: var(--violet);
 }
 
-h1 > .magic > .magic-text{
+h1>.magic>.magic-text {
   animation: background-pan 3s linear infinite;
-  background: linear-gradient(
-    to right,
-    var(--purple),
-    var(--violet),
-    var(--orange),
-    var(--yellow),
-    var(--purple)
-  );
+  background: linear-gradient(to right,
+      var(--purple),
+      var(--violet),
+      var(--orange),
+      var(--yellow),
+      var(--purple));
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -111,10 +111,13 @@ h1 > .magic > .magic-text{
 .schedule.animated:nth-child(2) {
   animation-delay: 0.5s;
 }
+
 .schedule.animated:nth-child(3) {
   animation-delay: 1s;
 }
+
 @media (max-width: 640px) {
+
   .schedule.animated:nth-child(2),
   .schedule.animated:nth-child(3) {
     animation-delay: 0s;
@@ -127,6 +130,7 @@ h1 > .magic > .magic-text{
     opacity: 50%;
     transform: translateX(-100px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0px);
