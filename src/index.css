@@ -3,15 +3,28 @@
 @font-face {
     font-family: 'Stacker';
     src: url('Home/fonts/stacker-font/Stacker-GOzYm.otf') format('opentype'),
-         url('Home/fonts/stacker-font/Stacker-jE03l.ttf') format('truetype');
+        url('Home/fonts/stacker-font/Stacker-jE03l.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 .font-stacker {
     font-family: 'Stacker', sans-serif;
-}  
+}
 
+.icon-on-hover {
+    width: 20px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Keep the aspect ratio */
+    margin-right: 8px;
+    /* Add some space between the icon and text */
+    transition: opacity 0.3s ease;
+}
+
+/* Optional: hide the text when hovered */
+.text-cyan:hover {
+}
 
 @tailwind base;
 @tailwind components;

@@ -11,8 +11,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import CountdownTimer from "./CountDownTimer";
 import uwbHacksLogo from './media/uwbhacksai2024.png';
+import pawLogo from './media/paw.png';
+
 
 export default function Header() {
+    const [isHeaderButtonHovered, setIsHeaderButtonHovered] = useState(false);
+    const handleHeaderButtonMouseEnter = () => setIsHeaderButtonHovered(true);
+    const handleHeaderButtonMouseLeave = () => setIsHeaderButtonHovered(false);
+
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 
@@ -131,9 +137,17 @@ export default function Header() {
                             </svg>
                         </div>
                     </NavLink>
-                    <NavLink to="https://discord.gg/aADBZChg2s" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500" target="_blank">
+                    <NavLink
+                        to="https://discord.gg/aADBZChg2s"
+                        className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500"
+                        target="_blank"
+                        onMouseEnter={handleHeaderButtonMouseEnter}
+                        onMouseLeave={handleHeaderButtonMouseLeave}
+                    >
                         <div className="font-stacker text-cyan h-full mt-4 flex flex-row items-center pb-[54px]">
+                            {isHeaderButtonHovered && <img src={pawLogo} alt="Paw Logo" className="icon-on-hover" />}
                             Discord
+                            {/* The SVG here will always show; remove it if you only want the paw icon on hover */}
                             <svg className="h-3 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path
                                     d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
@@ -217,14 +231,6 @@ export default function Header() {
                                 >
                                     Contact
                                 </NavLink>
-
-                                {/*                                 <NavLink
-                                    to="/uwb-hacks23/Registration"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow"
-                                    onClick={handleCloseMenu}
-                                >
-                                    Registration
-                                </NavLink>*/}
                                 <NavLink
                                     to="https://uwb-acm-hacks-in-person.devpost.com"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow"
