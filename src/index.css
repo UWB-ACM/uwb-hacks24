@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
+@font-face {
+    font-family: 'Stacker';
+    src: url('Home/fonts/stacker-font/Stacker-GOzYm.otf') format('opentype'),
+         url('Home/fonts/stacker-font/Stacker-jE03l.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-stacker {
+    font-family: 'Stacker', sans-serif;
+}  
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./index.html",
@@ -7,7 +8,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'SecularOne': ['"Secular One"', 'sans-serif']
+      'SecularOne': ['"Secular One"', 'sans-serif'],
+      'Stacker': ['Stacker', 'sans-serif'], 
     },
     colors: {
       'white': '#ffffff',
