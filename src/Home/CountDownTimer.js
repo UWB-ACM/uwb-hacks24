@@ -3,8 +3,8 @@ import './Home.css';
 import Marquee from "react-fast-marquee";
 
 function CountdownTimer() {
-    const [countdown, setCountdown] = useState(Date.parse('2023-05-05T00:00:00') - Date.now());
-    const [endTimer, setEndTimer] = useState(Date.parse('2023-05-07T11:00:00') - Date.now());
+    const [countdown, setCountdown] = useState(Date.parse('2024-05-05T00:00:00') - Date.now());
+    const [endTimer, setEndTimer] = useState(Date.parse('2024-05-07T11:00:00') - Date.now());
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -59,7 +59,7 @@ function CountdownTimer() {
     */
     return (
         <div className="countdown-timer-box py-2">
-            <Marquee play={playMarquee} gradient={false} speed={Math.log(window.screen.width) *10} onCycleComplete={handleMarquee}>Hacking has ended! Thanks for attending! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
+            <Marquee play={playMarquee} gradient={false} speed={Math.log(window.screen.width) *10} onCycleComplete={handleMarquee}>Preparation is Underway &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Marquee>
         </div>
     );
 }
