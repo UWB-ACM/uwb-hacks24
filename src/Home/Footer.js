@@ -78,7 +78,7 @@ export default function Footer() {
                     </NavLink>
                 </div>
             </div>
-            {/* The contact column is a placeholder column for now */}
+            {/* The contact column is a placeholder column for now 
             <div style={{margin: '55px 9% 0 9%', color: 'white'}}>
                 <NavLink to="/uwb-hacks23/Contact" className='hover:text-white'>
                     <div className='font-SecularOne' style={{fontSize: '24px'}}>Contact Us</div>  
@@ -94,7 +94,7 @@ export default function Footer() {
                         }}
                     />
                 </NavLink> 
-            </div>
+            </div>*/}
 
             <style>
                 {`
