@@ -42,6 +42,7 @@
   --brighterpurp: #ad50f0;
 }
 
+
 @keyframes background-pan {
   from {
     background-position: 0 center;
