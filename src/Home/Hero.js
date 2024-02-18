@@ -73,8 +73,8 @@ export default function Hero() {
             <div className="hero-container" id="heroSection">
                 <img src={hacker} alt="Husky Hacker" className="husky-image" />
                 <div className="text-container">
-                    <h1 className="theme-title">Theme Unannounced</h1>
-                    <p className="theme-location-time">2024 at UWB ARC</p>
+                    <h1 className="theme-title">UWB Hacks A.I.</h1>
+                    <p className="theme-location-time">April 26 at The ARC</p>
                 </div>
             </div>
         </>

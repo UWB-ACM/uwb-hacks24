@@ -1,9 +1,9 @@
 .countdown-timer-box {
-  background: linear-gradient(to right, #ff7f50, #ffd801);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  background: linear-gradient(to right, #4d9eff, #18e4ec);
+  font-family: 'Arial', sans-serif;
+  font-size: 21px;
   font-weight: bold;
-  color: mediumpurple;
+  color: #360a62;
   text-align: center;
 }
 
@@ -156,6 +156,10 @@ h1 > .magic > .magic-text{
   justify-content: center; /* Center children horizontally */
   min-height: 90vh; /* Adjust to desired height, this is less than full viewport height */
   background-color: #360a62; /* Your chosen background color */
+  background-image: url('media/grid.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Adjust .centered-image if it's still in use or replace with .husky-image */
