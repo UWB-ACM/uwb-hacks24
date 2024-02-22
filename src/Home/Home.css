@@ -186,3 +186,22 @@ h1 > .magic > .magic-text{
   margin: 0; /* Removes default margins */
   font-family: 'Stacker', sans-serif;
 }
+
+.theme-title {
+  font-size: 4rem; /* Large text for the theme */
+  background: linear-gradient(
+    to right,
+    var(--pink), 
+    var(--violet), 
+    var(--futuristic-bright-blue), /* Increased the lighter color area */
+    var(--cyan),
+    var(--futuristic-bright-blue), /* Repeat to ensure visibility */
+    var(--violet),
+    var(--pink)
+  );
+  -webkit-background-clip: text;
+  color: transparent; /* Make the text transparent to show the gradient */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Fallback for older browsers */
+  display: inline-block; /* Required for gradients on text */
+}
