@@ -123,7 +123,7 @@ export default function Header() {
                     <NavLink to="/uwb-hacks23/Contact" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500">
                         <div className="font-stacker text-purp2 h-full mt-4 flex flex-row items-center pb-[54px]">Contact</div>
                     </NavLink>
-                    <NavLink to="https://uwb-acm-hacks-in-person.devpost.com"
+                    <NavLink to="https://uwb-hacks-ai.devpost.com/"
                         className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500"
                         target="_blank">
                         <div className="font-stacker text-pink h-full mt-4 flex flex-row items-center pb-[54px]">
@@ -137,7 +137,7 @@ export default function Header() {
                         </div>
                     </NavLink>
                     <NavLink
-                        to="https://discord.gg/aADBZChg2s"
+                        to="https://discord.gg/GnSTYYcUEa"
                         className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500"
                         target="_blank"
                         onMouseEnter={handleHeaderButtonMouseEnter}
@@ -230,7 +230,7 @@ export default function Header() {
                                     Contact
                                 </NavLink>
                                 <NavLink
-                                    to="https://uwb-acm-hacks-in-person.devpost.com"
+                                    to="https://uwb-hacks-ai.devpost.com/"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow"
                                     onClick={handleCloseMenu}
                                     target="_blank"
@@ -238,7 +238,7 @@ export default function Header() {
                                     Devpost
                                 </NavLink>
                                 <NavLink
-                                    to="https://discord.gg/aADBZChg2s"
+                                    to="https://discord.gg/GnSTYYcUEa"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow"
                                     onClick={handleCloseMenu}
                                     target="_blank"
