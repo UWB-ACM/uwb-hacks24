@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 import Marquee from "react-fast-marquee";
+import pawLogo from './media/paw.png';
 
 function CountdownTimer() {
     // Set the start date for the hackathon
@@ -47,7 +48,9 @@ function CountdownTimer() {
         return (
             <div className="countdown-timer-box py-2">
                 <Marquee play={playMarquee} gradient={false} speed={50} onCycleComplete={handleMarquee}>
-                    {days} days until Hacking begins &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    {days} days until Hacking begins
+                    <img src={pawLogo} alt="Paw" className="paw-icon" /> {/* Add this line */}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </Marquee>
             </div>
         );

@@ -11,7 +11,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import CountdownTimer from "./CountDownTimer";
 import uwbHacksLogo from './media/uwbhacksai2024.png';
-import pawLogo from './media/paw.png';
 
 
 export default function Header() {

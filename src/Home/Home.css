@@ -205,3 +205,10 @@ h1 > .magic > .magic-text{
   -webkit-text-fill-color: transparent; /* Fallback for older browsers */
   display: inline-block; /* Required for gradients on text */
 }
+
+.paw-icon {
+  height: 40px; /* Adjust the size as needed */
+  width: auto; /* To maintain the aspect ratio */
+  margin-left: 10px; /* Add some space between the text and the image */
+  vertical-align: middle; /* Align it with the text */
+}
