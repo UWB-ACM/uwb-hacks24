@@ -97,35 +97,35 @@ export default function Header() {
                         smooth={'easeInOutQuint'}
                         duration={200}
                         offset={0}
-                        className="font-stacker text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                        className="font-stacker text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500">
                         <div className="text-pink h-full mt-4 flex flex-row items-center pb-[54px] ">About</div>
                     </Link>
                     <Link to="trackSection"
                         smooth={'easeInOutQuint'}
                         duration={200}
                         offset={-10}
-                        className="font-stacker text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                        className="font-stacker text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500">
                         <div className="text-purp2 h-full mt-4 flex flex-row items-center pb-[54px]">Tracks</div>
                     </Link>
                     <Link to="schedule"
                         smooth={'easeInOutQuint'}
                         duration={200}
                         offset={0}
-                        className="font-stacker text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                        className="font-stacker text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500">
                         <div className="text-cyan h-full mt-4 flex flex-row items-center pb-[54px]">Schedule</div>
                     </Link>
                     <Link to="faqSection"
                         smooth={'easeInOutQuint'}
                         duration={200}
                         offset={-10}
-                        className="font-stacker text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                        className="font-stacker text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500">
                         <div className="text-pink h-full mt-4 flex flex-row items-center pb-[54px]">FAQ</div>
                     </Link>
-                    <NavLink to="/uwb-hacks23/Contact" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500">
+                    <NavLink to="/uwb-hacks23/Contact" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500">
                         <div className="font-stacker text-purp2 h-full mt-4 flex flex-row items-center pb-[54px]">Contact</div>
                     </NavLink>
                     <NavLink to="https://uwb-acm-hacks-in-person.devpost.com"
-                        className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500"
+                        className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500"
                         target="_blank">
                         <div className="font-stacker text-pink h-full mt-4 flex flex-row items-center pb-[54px]">
                             Devpost
@@ -139,7 +139,7 @@ export default function Header() {
                     </NavLink>
                     <NavLink
                         to="https://discord.gg/aADBZChg2s"
-                        className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-light-purple h-full transition duration-500"
+                        className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500"
                         target="_blank"
                         onMouseEnter={handleHeaderButtonMouseEnter}
                         onMouseLeave={handleHeaderButtonMouseLeave}
