@@ -7,8 +7,8 @@ function CollapseButton(props) {
     <div className="pt-2 pb-3">
       <p className="mb-3 space-y-1 md:space-x-1 md:space-y-0">
         <button
-          className="text-left shadow-purpleFAQ drop-shadow-lg rounded bg-pink-400 px-6 pt-2.5 pb-2 text-3xl font-serif hover:bg-opacity-80
-             text-light-purple w-full
+          className="text-left shadow-purple drop-shadow-lg rounded bg-pink-400 px-6 pt-2.5 pb-2 text-3xl font-Stacker hover:bg-opacity-80 
+             text-purple w-full
             shadow-[0_4px_9px_-4px_#ac82ff] 
             transition duration-150 ease-in-out "
           type="button"
@@ -27,7 +27,7 @@ function CollapseButton(props) {
         id={props.buttonID}
         data-te-collapse-item
       >
-        <div className="block rounded-lg bg-light-purple font-serif text-white p-6 text-2xl font-normal">
+        <div className="block rounded-lg bg-purple font-Stacker text-white p-6 text-2xl font-normal">
           {props.children}
         </div>
       </div>

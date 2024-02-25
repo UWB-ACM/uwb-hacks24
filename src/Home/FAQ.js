@@ -6,8 +6,8 @@ import COC from "./media/Code_of_Conduct.pdf"
 function FAQ() {
 
         return (
-                <div id="faqSection" className="shadow-md overflow-hidden border-2 border-purpleFAQ bg-white bg-opacity-100 rounded-xl mx-4 my-5">
-                        <div className="font-serif text-6xl text-light-purple text-center mb-2 mt-3 font-bold">FAQ</div>
+                <div id="faqSection" className="shadow-md overflow-hidden border-2 border-purple bg-white bg-opacity-100 rounded-xl mx-4 my-5">
+                        <div className="font-Stacker text-6xl text-purple text-center mb-2 mt-3 font-bold">FAQ</div>
                         <div className="mx-4">
                                 <CollapseButton buttonID="faqb1" buttonText="Will UWB Hacks 2024 be in-person or virtual?" >
                                         This will be a hybrid event, with in-person and virtual offerings. <br /><br />
