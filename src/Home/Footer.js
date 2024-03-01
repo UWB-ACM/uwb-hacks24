@@ -66,14 +66,14 @@ export default function Footer() {
                     maxWidth: '400px',
                     margin: '0 auto'
                 }}>
-                    <NavLink to={"https://discord.gg/7jFyNVCcpH"} className="mx-auto">
-                        <FontAwesomeIcon icon={faDiscord} style={{color: "#4dffff", transform: "scale(2.3)"}} />
+                    <NavLink to={"https://discord.gg/yPjkrbNFqK"} className="mx-auto">
+                        <FontAwesomeIcon icon={faDiscord} style={{color: "#4ddbff", transform: "scale(2.3)"}} />
                     </NavLink>
                     <NavLink to={"https://www.instagram.com/uwb_acm/"} className="mx-auto">
                         <FontAwesomeIcon icon={faInstagram} style={{color: "#ff33cc", transform: "scale(2.3)"}} />
                     </NavLink>
                     <NavLink to={"https://www.facebook.com/uwbacm/"} className="mx-auto">
-                        <FontAwesomeIcon icon={faFacebook} style={{color: "#00e6b8", transform: "scale(2.3)"}} />
+                        <FontAwesomeIcon icon={faFacebook} style={{color: "#4d94ff", transform: "scale(2.3)"}} />
                     </NavLink>
                     <NavLink to={"https://www.linkedin.com/company/uwb-acm-club/"} className="mx-auto">
                         <FontAwesomeIcon icon={faLinkedin} style={{color: "#4db8ff", transform: "scale(2.3)"}} />
