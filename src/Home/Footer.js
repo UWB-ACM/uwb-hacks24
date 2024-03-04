@@ -66,16 +66,16 @@ export default function Footer() {
                     maxWidth: '400px',
                     margin: '0 auto'
                 }}>
-                    <NavLink to={"https://discord.gg/yPjkrbNFqK"} className="mx-auto">
+                    <NavLink to={"https://discord.gg/yPjkrbNFqK"} className="mx-auto social-icon">
                         <FontAwesomeIcon icon={faDiscord} style={{color: "#4ddbff", transform: "scale(2.3)"}} />
                     </NavLink>
-                    <NavLink to={"https://www.instagram.com/uwb_acm/"} className="mx-auto">
+                    <NavLink to={"https://www.instagram.com/uwb_acm/"} className="mx-auto social-icon">
                         <FontAwesomeIcon icon={faInstagram} style={{color: "#ff33cc", transform: "scale(2.3)"}} />
                     </NavLink>
-                    <NavLink to={"https://www.facebook.com/uwbacm/"} className="mx-auto">
+                    <NavLink to={"https://www.facebook.com/uwbacm/"} className="mx-auto social-icon">
                         <FontAwesomeIcon icon={faFacebook} style={{color: "#4d94ff", transform: "scale(2.3)"}} />
                     </NavLink>
-                    <NavLink to={"https://www.linkedin.com/company/uwb-acm-club/"} className="mx-auto">
+                    <NavLink to={"https://www.linkedin.com/company/uwb-acm-club/"} className="mx-auto social-icon">
                         <FontAwesomeIcon icon={faLinkedin} style={{color: "#4db8ff", transform: "scale(2.3)"}} />
                     </NavLink>
                 </div>
@@ -107,7 +107,7 @@ export default function Footer() {
                     }
                 }
 
-                .mx-auto:hover {
+                .social-icon:hover {
                     transform: scale(1.5);
                 }
                 `}
