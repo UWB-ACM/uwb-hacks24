@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     fontFamily: {
       'SecularOne': ['"Secular One"', 'sans-serif'],
-      'Stacker': ['Stacker', 'sans-serif'], 
+      'Stacker': ['Stacker', 'sans-serif'],
+      'serif': ['"fonttwo"', "Georgia"],
     },
     colors: {
       'white': '#ffffff',
@@ -24,8 +25,11 @@ module.exports = {
       'pink': '#eb37c5',
       'purple': '#360a62',
       'blue': '#145db6',
-      'cyan': '#18e4ec',
-      'purp2': '#ad50f0'
+      'cyan': '#18e4ec', 'pinkFAQ': '#eb37c5',
+      'purpleFAQ': '#360a62',
+      'blueFAQ': '#145db6',
+      'cyanFAQ': '#18e4ec',
+      'purp2': '#ad50f0',
     },
     extend: {},
   },

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-expressions */
 import "./Home.css"
 import CountDownTimer from "./CountDownTimer";
-import {useEffect} from "react";
+import { useEffect } from "react";
 import hacker from './media/cropped_husky.PNG';
 
 export default function Hero() {
@@ -20,7 +20,7 @@ export default function Hero() {
             star.style.animation = "";
         }
 
-        for(const star of document.getElementsByClassName("magic-star")) {
+        for (const star of document.getElementsByClassName("magic-star")) {
             setTimeout(() => {
                 animate(star);
 
@@ -69,14 +69,15 @@ export default function Hero() {
     // );
     return (
         <>
-            <CountDownTimer/>
+            <CountDownTimer />
             <div className="hero-container" id="heroSection">
                 <img src={hacker} alt="Husky Hacker" className="husky-image" />
                 <div className="text-container">
-                    <h1 className="theme-title">Theme Unannounced</h1>
-                    <p className="theme-location-time">2024 at UWB ARC</p>
+                    <h1 className="theme-title">UWB HACKS A.I.</h1>
+                    <p className="theme-location-time">April 26 at The ARC</p>
                 </div>
             </div>
         </>
     );
-}
+};
+
