@@ -8,7 +8,7 @@ import StackedCards from './TrackCard';
 function Tracks() {
     return (
         <>
-            <div className="bg-purple rounded-xl overflow-hidden mt-5" id="trackSection">
+            <div className="bg-purple rounded-xl overflow-hidden" id="trackSection">
                 <div className="font-stacker text-pink text-6xl text-center mt-3 mb-2">
                     Tracks
                 </div>
