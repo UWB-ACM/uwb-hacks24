@@ -120,8 +120,16 @@ export default function Header() {
                         className="font-stacker text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500">
                         <div className="text-pink h-full mt-4 flex flex-row items-center pb-[54px]">FAQ</div>
                     </Link>
-                    <NavLink to="/uwb-hacks23/Contact" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500">
-                        <div className="font-stacker text-purp2 h-full mt-4 flex flex-row items-center pb-[54px]">Contact</div>
+                    <NavLink to="https://forms.gle/bS1QrjXdHP7dVVNt6" className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500">
+                        <div className="font-stacker text-purp2 h-full mt-4 flex flex-row items-center pb-[54px]">
+                            Contact
+                            <svg className="h-3 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                                    fill='#ad50f0'
+                                />
+                            </svg>
+                        </div>
                     </NavLink>
                     <NavLink to="https://uwb-hacks-ai.devpost.com/"
                         className="text-1xl px-4 font-semibold leading-6 cursor-pointer items-center bg-opacity-10 hover:bg-blue h-full transition duration-500"
@@ -223,7 +231,7 @@ export default function Header() {
                                     FAQ
                                 </Link>
                                 <NavLink
-                                    to="/uwb-hacks23/Contact"
+                                    to="https://forms.gle/bS1QrjXdHP7dVVNt6"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-yellow"
                                     onClick={handleCloseMenu}
                                 >
