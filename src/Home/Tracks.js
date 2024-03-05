@@ -37,10 +37,10 @@ function Tracks() {
                 <div className="font-stacker text-pink text-6xl text-center mt-3 mb-2">
                     Tracks
                 </div>
-                <div className="font-stacker text-cyan flex flex-col items-center justify-center sm:flex-row sm:flex-wrap overflow-hidden pb-36">
-                    Tracks to be released soon
-                </div>
 
+                <div className="font-stacker text-pink flex flex-col items-center justify-center sm:flex-row sm:flex-wrap overflow-hidden pb-36">
+                    <StackedCards cardTitle="Soon..." backgroundImage={BioTech}>Tracks to be released soon. Stay tuned.</StackedCards>
+                </div>
             </div>
         </>
     );
