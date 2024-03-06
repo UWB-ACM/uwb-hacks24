@@ -210,6 +210,8 @@ h1>.magic>.magic-text {
   display: inline-block; /* Required for gradients on text */
 }
 
+
+
 .paw-icon {
   height: 40px; /* Adjust the size as needed */
   width: auto; /* To maintain the aspect ratio */
