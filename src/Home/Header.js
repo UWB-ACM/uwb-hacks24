@@ -168,10 +168,10 @@ export default function Header() {
 
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <div className="fixed inset-0 " />
-                <Dialog.Panel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-pink px-6 py-6 sm:max-w-sm sm:ring-1">
+                <Dialog.Panel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
-                            <span className="font-stacker mt-4 text-cyan text-2xl font-bold ">UWB Hacks 2024</span>
+                            <span className="mt-4 text-purple text-2xl font-bold ">UWB Hacks 2024</span>
                             {/*<img*/}
                             {/*    className="h-8 w-auto"*/}
                             {/*    src=""*/}
