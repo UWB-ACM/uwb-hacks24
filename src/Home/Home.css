@@ -240,7 +240,7 @@ h1>.magic>.magic-text {
 /* Adjust the size of the logos if needed */
 .club-logos {
   width: auto; /* Keep width auto to maintain aspect ratio */
-  height: 60px; /* Increase the height as needed, this example increases it to 60px */
+  height: 30px; /* Increase the height as needed, this example increases it to 60px */
   margin-right: 10px; /* Space between logos and 'Presents...' text */
 }
 
@@ -249,4 +249,50 @@ h1>.magic>.magic-text {
   color: #ffffff; /* Text color */
   margin: 0; /* Remove default margins */
   font-family: 'Stacker', sans-serif;
+}
+
+/*Sponsor.js classesr*/
+.sponsors-container {
+  text-align: center;
+  padding: 20px;
+  background-color: black; /* Background color to match the hero section */
+  color: #ffffff; /* Text color */
+}
+
+.sponsor-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Stacker', sans-serif; /* Matching font family */
+  color: #ffd801; /* Adjusting to a color that matches the site theme */
+  margin-bottom: 30px; /* Adjust the space below the header */
+}
+
+.husky-paw {
+  margin: 0 15px; /* Space around the paw images */
+  width: 40px; /* Size of the paw images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-logo-container {
+  margin: 20px; /* Space around each sponsor logo */
+  padding: 10px; /* Padding inside the logo container */
+  border: 2px solid var(--yellow); /* Border around the logo container, matching the theme */
+  border-radius: 10px; /* Rounded corners of the logo container */
+  background-color: var(--black); /* White background for contrast */
+  width: 200px; /* Width of the logo container */
+  height: 100px; /* Height of the logo container */
+}
+
+.sponsor-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Prevents distortion of logos */
 }
