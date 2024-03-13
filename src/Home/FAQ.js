@@ -49,7 +49,7 @@ function FAQ() {
                                                 Parking on campus does cost $1.75 per hour and is on an hourly basis. For more information about parking, check <a className="font-bold text-white" target="_blank" href='https://www.uwb.edu/commuter-services/parking/parking-permits#daily-parking '>here</a>
                                         </CollapseButton>
                                         <CollapseButton buttonID="faqb10" buttonText="What if I have a question that wasn't answered in the FAQ?">
-                                                Please feel free to reach out to event organizers in the “#organizer-discussion” channel of the UWB Hacks In Person Discord or fill out the <NavLink to="/uwb-hacks23/Contact" className=" cursor-pointer text-white font-bold"> contact form. </NavLink>
+                                                Please feel free to reach out to event organizers in the “#organizer-discussion” channel of the UWB Hacks In Person Discord or fill out the <NavLink to="/uwb-hacks24/Contact" className=" cursor-pointer text-white font-bold"> contact form. </NavLink>
                                         </CollapseButton>
 
 

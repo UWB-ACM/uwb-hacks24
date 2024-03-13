@@ -38,7 +38,7 @@ export default function Header() {
     };
 
 
-    if (location.pathname === "/uwb-hacks23/Contact" || location.pathname === "/uwb-hacks23/Registration" || location.pathname === "/uwb-hacks23/Login") {
+    if (location.pathname === "/uwb-hacks24/Contact" || location.pathname === "/uwb-hacks24/Registration" || location.pathname === "/uwb-hacks24/Login") {
         return (
             <>
                 <header className="h-20 flex justify-end ">
@@ -46,7 +46,7 @@ export default function Header() {
                         {!isHovered ? (
                             <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                                 <NavLink
-                                    to="/uwb-hacks23"
+                                    to="/uwb-hacks24"
                                     className="text-lg font-semibold leading-6 text-purple pt-5 px-1 hover:text-orange"
                                 >
                                     Return to Home
@@ -58,7 +58,7 @@ export default function Header() {
                         ) : (
                             <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={() => setIsHovered(false)}>
                                 <NavLink
-                                    to="/uwb-hacks23"
+                                    to="/uwb-hacks24"
                                     className="text-lg font-semibold leading-6 text-orange pt-5 px-1 hover:text-orange"
                                 >
                                     Return to Home

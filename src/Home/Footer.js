@@ -4,7 +4,7 @@ import {NavLink, useLocation} from "react-router-dom";
 //import {Link} from "react-scroll";
 export default function Footer() {
     const location = useLocation();
-    if (location.pathname !== "/uwb-hacks23" && location.pathname !== "/uwb-hacks23/") {
+    if (location.pathname !== "/uwb-hacks24" && location.pathname !== "/uwb-hacks24/") {
         return <></>
     }
 
@@ -82,7 +82,7 @@ export default function Footer() {
             </div>
             {/* The contact column is a placeholder column for now 
             <div style={{margin: '55px 9% 0 9%', color: 'white'}}>
-                <NavLink to="/uwb-hacks23/Contact" className='hover:text-white'>
+                <NavLink to="/uwb-hacks24/Contact" className='hover:text-white'>
                     <div className='font-SecularOne' style={{fontSize: '24px'}}>Contact Us</div>  
                     <textarea
                         style={{
