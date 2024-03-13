@@ -32,7 +32,7 @@ function FAQ() {
                                         <CollapseButton buttonID="faqb5" buttonText="What if I don't have a team?">
                                                 You are welcome to work individually or with a team. <br /><br />
                                                 Friday, we will have an in-person Opening Ceremony and Team Building time, from 10:00am until 2:00pm. Free snacks will be provided. The top floor of the Activities and Recreation Center (ARC) at UW Bothell is reserved. <br /><br />
-                                                If you are struggling to find a team or don't have a team and want to work with one, we recommend you join our UWB Hacks In Person Discord. There is a '#team-formation' channel where you can find other people looking for teams.
+                                                If you are struggling to find a team or don't have a team and want to work with one, we recommend you join our UWB Hacks AI Discord. There is a '#team-formation' channel where you can find other people looking for teams.
                                         </CollapseButton>
                                         <CollapseButton buttonID="faqb6" buttonText="How many people can be on a team?">
                                                 We have a limit of 5 members per team. Any more than 5 members would potentially reduce team production and cause further difficulties for your projects.
@@ -44,12 +44,12 @@ function FAQ() {
                                                 Behave Appropriately: This is an event on a university campus, and thus you should act as you would on campus. Inappropriate behavior or posts are not acceptable under any circumstances. <br /><br />
                                                 <a className="font-bold text-yellow" target="_blank" href={COC}>Read our code of conduct</a>
                                         </CollapseButton>
-                                        <CollapseButton buttonID="faqb9" buttonText="Does UWB Hacks In Person cost money?">
+                                        <CollapseButton buttonID="faqb9" buttonText="Does UWB Hacks AI cost money?">
                                                 This event is entirely free! No sign up or registration fees required. <br /><br />
                                                 Parking on campus does cost $1.75 per hour and is on an hourly basis. For more information about parking, check <a className="font-bold text-white" target="_blank" href='https://www.uwb.edu/commuter-services/parking/parking-permits#daily-parking '>here</a>
                                         </CollapseButton>
                                         <CollapseButton buttonID="faqb10" buttonText="What if I have a question that wasn't answered in the FAQ?">
-                                                Please feel free to reach out to event organizers in the “#organizer-discussion” channel of the UWB Hacks In Person Discord or fill out the <NavLink to="/uwb-hacks24/Contact" className=" cursor-pointer text-white font-bold"> contact form. </NavLink>
+                                                Please feel free to reach out to event organizers in the “#organizer-discussion” channel of the UWB Hacks AI Discord or fill out the <NavLink to="/uwb-hacks24/Contact" className=" cursor-pointer text-white font-bold"> contact form. </NavLink>
                                         </CollapseButton>
 
 
