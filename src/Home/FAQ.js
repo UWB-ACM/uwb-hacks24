@@ -15,7 +15,7 @@ function FAQ() {
                                                 The venue for in-person activities will be the top floor of the Activities and Recreation Center (ARC) at UW Bothell. <br /><br />
                                                 We will have a Discord channel devoted to the hackathon that you can use to keep track of the schedule and to ask questions or attend virtual events.
                                         </CollapseButton>
-                                        <CollapseButton buttonID="faqb2" buttonText="How will UWB Hacks In Person run?">
+                                        <CollapseButton buttonID="faqb2" buttonText="How will UWB HACKS AI run?">
                                                 This will be a hybrid event, with in-person and virtual offerings. The venue for in-person activities will be the top floor of the Activities and Recreation Center (ARC) at UW Bothell. <br /><br />
                                                 Friday 10am-2pm: Opening Ceremony, Team Building, FREE SNACKS! <br /><br />
                                                 Saturday 9am-4pm: Development Workshops, Seminars, Coding + FREE PIZZA <br /><br />
