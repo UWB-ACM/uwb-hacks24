@@ -35,7 +35,7 @@ function FAQ() {
                                                 If you are struggling to find a team or don't have a team and want to work with one, we recommend you join our UWB Hacks AI Discord. There is a '#team-formation' channel where you can find other people looking for teams.
                                         </CollapseButton>
                                         <CollapseButton buttonID="faqb6" buttonText="How many people can be on a team?">
-                                                We have a limit of 5 members per team. Any more than 5 members would potentially reduce team production and cause further difficulties for your projects.
+                                                We have a limit of 3 members per team. Any more than 3 members would potentially reduce team production and cause further difficulties for your projects.
                                         </CollapseButton>
                                         <CollapseButton buttonID="faqb7" buttonText="What are tracks?">
                                                 In Hackathons, tracks are used to help you come up with ideas and help guide you through your project. For example: a project for the Education track could be an app that helps students keep track of their school and personal life to maintain a healthy work life balance.
