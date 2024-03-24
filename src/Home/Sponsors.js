@@ -1,10 +1,12 @@
 import React from 'react';
 import pawImage from './media/paw.png'; // Adjust the path as necessary
 import avanade from './media/avanade.png'; // Adjust the path as necessary
+import muirai from './media/muir-logo-light.png';
 
 // Update this array with your actual sponsor data
 const sponsors = [
   { id: 1, name: "Sponsor One", logo: avanade }, // Example sponsor
+  { id: 2, name: "Sponsor Two", logo: muirai},
   // Add more sponsors as needed
 ];
 
