@@ -2,8 +2,6 @@ UWB HACKS AI 2024
 
 Link: https://uwb-acm.github.io/uwb-hacks24/
 
-2024 Link: None. WIP.
-
 ## Thanks to our Development Team
 
 - **Alan:** Splash screen, Headers, Text, Refinement
