@@ -21,7 +21,7 @@ function FAQ() {
                                                 Saturday 9am-4pm: Development Workshops, Seminars, Coding + FREE PIZZA <br /><br />
                                                 Sunday 10am-2pm: Career Workshops, Closing Ceremony + FREE DONUTS <br /><br />
                                                 We will be hosting online events such as workshops and guest speakers through Zoom (Schedule coming soon). <br /><br />
-                                                For teamwork on your project, communication methods are entirely up to you, but we recommend Zoom, Microsoft Teams, or Discord.
+                                                For teamwork on your project, communication methods are entirely up to you, but we recommend Zoom, Microsoft Teams, or <NavLink to="https://discord.gg/GnSTYYcUEa" className=" cursor-pointer text-cyan font-bold">Discord</NavLink>.
                                         </CollapseButton>
                                         <CollapseButton buttonID="faqb3" buttonText="Do I have to be a UWB student to register?">
                                                 No, we accept all students from high schools, community colleges, and universities. Hackers from non-traditional institutions like boot camps and academies are welcome as well.
@@ -49,7 +49,7 @@ function FAQ() {
                                                 Parking on campus does cost $1.75 per hour and is on an hourly basis. For more information about parking, check <a className="font-bold text-white" target="_blank" href='https://www.uwb.edu/commuter-services/parking/parking-permits#daily-parking '>here</a>
                                         </CollapseButton>
                                         <CollapseButton buttonID="faqb10" buttonText="What if I have a question that wasn't answered in the FAQ?">
-                                                Please feel free to reach out to event organizers in the “#organizer-discussion” channel of the UWB Hacks AI Discord or fill out the <NavLink to="/uwb-hacks24/Contact" className=" cursor-pointer text-white font-bold"> contact form. </NavLink>
+                                                Please feel free to reach out to event organizers in the “#organizer-discussion” channel of the UWB Hacks AI <NavLink to="https://discord.gg/GnSTYYcUEa" className=" cursor-pointer text-cyan font-bold">Discord</NavLink> or fill out the <NavLink to="https://forms.gle/bS1QrjXdHP7dVVNt6" className=" cursor-pointer text-cyan font-bold"> contact form. </NavLink>
                                         </CollapseButton>
 
 
