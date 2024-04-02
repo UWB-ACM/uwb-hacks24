@@ -17,9 +17,6 @@ function FAQ() {
                                         </CollapseButton>
                                         <CollapseButton buttonID="faqb2" buttonText="How will UWB HACKS AI run?">
                                                 This will be a hybrid event, with in-person and virtual offerings. The venue for in-person activities will be the top floor of the Activities and Recreation Center (ARC) at UW Bothell. <br /><br />
-                                                Friday 10am-2pm: Opening Ceremony, Team Building, FREE SNACKS! <br /><br />
-                                                Saturday 9am-4pm: Development Workshops, Seminars, Coding + FREE PIZZA <br /><br />
-                                                Sunday 10am-2pm: Career Workshops, Closing Ceremony + FREE DONUTS <br /><br />
                                                 We will be hosting online events such as workshops and guest speakers through Zoom (Schedule coming soon). <br /><br />
                                                 For teamwork on your project, communication methods are entirely up to you, but we recommend Zoom, Microsoft Teams, or <NavLink to="https://discord.gg/GnSTYYcUEa" className=" cursor-pointer text-cyan font-bold">Discord</NavLink>.
                                         </CollapseButton>
@@ -31,7 +28,7 @@ function FAQ() {
                                         </CollapseButton>
                                         <CollapseButton buttonID="faqb5" buttonText="What if I don't have a team?">
                                                 You are welcome to work individually or with a team. <br /><br />
-                                                Friday, we will have an in-person Opening Ceremony and Team Building time, from 10:00am until 2:00pm. Free snacks will be provided. The top floor of the Activities and Recreation Center (ARC) at UW Bothell is reserved. <br /><br />
+                                                Friday, we will have an in-person Opening Ceremony and Team Building time, from 10:00am until 1:00pm. Free snacks will be provided. The top floor of the Activities and Recreation Center (ARC) at UW Bothell is reserved. <br /><br />
                                                 If you are struggling to find a team or don't have a team and want to work with one, we recommend you join our UWB Hacks AI Discord. There is a '#team-formation' channel where you can find other people looking for teams.
                                         </CollapseButton>
                                         <CollapseButton buttonID="faqb6" buttonText="How many people can be on a team?">
@@ -46,7 +43,7 @@ function FAQ() {
                                         </CollapseButton>
                                         <CollapseButton buttonID="faqb9" buttonText="Does UWB Hacks AI cost money?">
                                                 This event is entirely free! No sign up or registration fees required. <br /><br />
-                                                Parking on campus does cost $1.75 per hour and is on an hourly basis. For more information about parking, check <a className="font-bold text-white" target="_blank" href='https://www.uwb.edu/commuter-services/parking/parking-permits#daily-parking '>here</a>
+                                                For parking, the daily rate is $2.00/hour and $10.00/day (or all day). For more information about parking, check <a className="font-bold text-white" target="_blank" href='https://www.uwb.edu/commuter-services/parking/parking-permits#daily-parking '>here</a>
                                         </CollapseButton>
                                         <CollapseButton buttonID="faqb10" buttonText="What if I have a question that wasn't answered in the FAQ?">
                                                 Please feel free to reach out to event organizers in the “#organizer-discussion” channel of the UWB Hacks AI <NavLink to="https://discord.gg/GnSTYYcUEa" className=" cursor-pointer text-cyan font-bold">Discord</NavLink> or fill out the <NavLink to="https://forms.gle/bS1QrjXdHP7dVVNt6" className=" cursor-pointer text-cyan font-bold"> contact form. </NavLink>
