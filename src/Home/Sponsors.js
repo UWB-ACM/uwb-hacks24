@@ -1,12 +1,12 @@
 import React from 'react';
-import pawImage from './media/paw.png'; // Adjust the path as necessary
-import avanade from './media/avanade.png'; // Adjust the path as necessary
+import pawImage from './media/paw.png'; 
+import avanade from './media/avanade.png'; 
 import muirai from './media/muir-logo-light.png';
 
 // Update this array with your actual sponsor data
 const sponsors = [
-  { id: 1, name: "Sponsor One", logo: avanade }, // Example sponsor
-  { id: 2, name: "Sponsor Two", logo: muirai},
+  { id: 1, name: "Sponsor One", logo: avanade, link: "https://www.avanade.com/en-us" }, 
+  { id: 2, name: "Sponsor Two", logo: muirai, link: "https://www.muir.ai"},
   // Add more sponsors as needed
 ];
 
@@ -21,7 +21,9 @@ const Sponsors = () => {
       <div className="flex flex-wrap justify-center items-center">
         {sponsors.map((sponsor) => (
           <div key={sponsor.id} className="sponsor-logo-container m-5">
-            <img src={sponsor.logo} alt={sponsor.name} className="sponsor-logo h-48 w-80 object-contain" />
+            <a href={sponsor.link} target="_blank" rel="noopener noreferrer">
+              <img src={sponsor.logo} alt={sponsor.name} className="sponsor-logo h-48 w-80 object-contain" />
+            </a>
           </div>
         ))}
       </div>
