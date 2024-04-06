@@ -25,6 +25,7 @@ function Schedule() {
 
                 <div id={"schedule-1"} className="bg-black bg-opacity-90 w-96 h-100 my-3 mx-auto text-center font-semibold border-2 border-pink rounded-2xl container schedule">
                     <div className={"text-4xl mt-2 text-pink font-stacker"}>Friday</div>
+                    <div className={"text-sm"} style={{ color: '#CFD30C' }}>Fandom Day - Wear clothes that relect what you are passionate about so that you can find teammates who share your interest</div>
                     <div className="h-12 mt-4 mb-1 flex items-center">
                         <div className={"ml-5 border-1 border-pink rounded-md py-1 px-2 text-sm font-light bg-black"}>
                             <p style={{ color: '#CFD30C' }}>10:00 AM</p>
@@ -64,6 +65,7 @@ function Schedule() {
                 </div>
                 <div id={"schedule-2"} className="bg-black w-96 h-100 my-3 mx-auto text-center font-semibold border-2 border-pink rounded-2xl container schedule delay-1">
                     <div className={"text-4xl mt-2 text-pink font-stacker"}>Saturday</div>
+                    <div className={"text-sm"} style={{ color: '#CFD30C' }}>Husky Spirit Wear Day - Weat purple and gold to show your Husky spirit</div>
                     <div className="rounded-xl h-12 mt-4 mb-1 flex items-center">
                         <div className={"ml-5 border-1 border-pink rounded-md py-1 px-2 text-sm font-light bg-black"}>
                             <p style={{ color: '#CFD30C' }}>10:00 AM</p>
@@ -101,6 +103,7 @@ function Schedule() {
                 </div>
                 <div id={"schedule-3"} className="bg-black w-96 h-100 my-3 mx-auto text-center font-semibold border-2 border-pink rounded-2xl container schedule delay-2">
                     <div className={"text-4xl mt-2 text-pink font-stacker"}>Sunday</div>
+                    <div className={"text-sm"} style={{ color: '#CFD30C' }}>Professional Attire Day - Wear Professional or business casual clothes for your pitch/demo in front of the judges</div>
                     <div className="rounded-xl h-12 mt-4 mb-1 flex items-center">
                         <div className={"ml-5 border-1 border-pink rounded-md py-1 px-2 text-sm font-light bg-black"}>
                             <p style={{ color: '#CFD30C' }}>10:00 AM</p>
