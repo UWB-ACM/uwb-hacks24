@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/uwb-hacks24/static/css/main.657739b5.css",
-    "main.js": "/uwb-hacks24/static/js/main.81ceff79.js",
+    "main.js": "/uwb-hacks24/static/js/main.ed2ceb4f.js",
     "static/js/977.0dcf5a45.chunk.js": "/uwb-hacks24/static/js/977.0dcf5a45.chunk.js",
     "static/js/787.2d9685f7.chunk.js": "/uwb-hacks24/static/js/787.2d9685f7.chunk.js",
     "static/media/grid.png": "/uwb-hacks24/static/media/grid.7c3d9e70b68002b91368.png",
@@ -15,12 +15,12 @@
     "static/media/avanade.png": "/uwb-hacks24/static/media/avanade.57aa2db0cebde6cb8a24.png",
     "index.html": "/uwb-hacks24/index.html",
     "main.657739b5.css.map": "/uwb-hacks24/static/css/main.657739b5.css.map",
-    "main.81ceff79.js.map": "/uwb-hacks24/static/js/main.81ceff79.js.map",
+    "main.ed2ceb4f.js.map": "/uwb-hacks24/static/js/main.ed2ceb4f.js.map",
     "977.0dcf5a45.chunk.js.map": "/uwb-hacks24/static/js/977.0dcf5a45.chunk.js.map",
     "787.2d9685f7.chunk.js.map": "/uwb-hacks24/static/js/787.2d9685f7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.657739b5.css",
-    "static/js/main.81ceff79.js"
+    "static/js/main.ed2ceb4f.js"
   ]
 }
