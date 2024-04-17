@@ -45,7 +45,13 @@ function FAQ() {
                                                 This event is entirely free! No sign up or registration fees required. <br /><br />
                                                 For parking, the daily rate is $2.00/hour and $10.00/day (or all day). For more information about parking, check <a className="font-bold text-white" target="_blank" href='https://www.uwb.edu/commuter-services/parking/parking-permits#daily-parking '>here</a>
                                         </CollapseButton>
-                                        <CollapseButton buttonID="faqb10" buttonText="What if I have a question that wasn't answered in the FAQ?">
+                                        <CollapseButton buttonID="faqb10" buttonText="Can I do a team of 4 or more if only 3 people get prizes?">
+                                                We have a strict cap at 3 students maximum per team. Any more than that would be unfair to other teams because that team would have more help.
+                                        </CollapseButton>
+                                        <CollapseButton buttonID="faqb11" buttonText="If I compete by myself, do I get the prize amount of a 3 person team if I win?">
+                                                If you compete by yourself (team of one), you will get the amount of a 1 person team, $250 + and additional $250 if chosen for the grand prize. Whether you compete alone or in a team of 3 will not make a difference in the amount you will win individually. 
+                                        </CollapseButton>
+                                        <CollapseButton buttonID="faqb12" buttonText="What if I have a question that wasn't answered in the FAQ?">
                                                 Please feel free to reach out to event organizers in the “#organizer-discussion” channel of the UWB Hacks AI <NavLink to="https://discord.gg/GnSTYYcUEa" className=" cursor-pointer text-cyan font-bold">Discord</NavLink> or fill out the <NavLink to="https://forms.gle/bS1QrjXdHP7dVVNt6" className=" cursor-pointer text-cyan font-bold"> contact form. </NavLink>
                                         </CollapseButton>
 
@@ -57,4 +63,3 @@ function FAQ() {
 }
 
 export default FAQ;
-
