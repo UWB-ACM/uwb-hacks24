@@ -62,7 +62,7 @@ function TrackCard(props) {
         className={`absolute h-full w-full left-2 top-2 bg-black  rounded-lg  transition-all duration-500 transform border-2 ${bottomZ} ${bottomY} ${bottomX} cursor-pointer`}
       >
         <div className="flex h-full w-full  rounded-xl p-4 ">
-                <div className="font-normal text-xl text-center text-light-purple mt-2">{props.children}</div>
+                <div className="font-normal text-xl text-center text-cyan mt-2 "style={{ fontSize: '0.75rem'}}>{props.children}</div>
         </div>
       </div>
       <div
