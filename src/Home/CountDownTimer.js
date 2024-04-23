@@ -5,7 +5,7 @@ import pawLogo from './media/paw.png';
 
 function CountdownTimer() {
     // Set the start date for the hackathon
-    const startDate = new Date('2024-04-26T00:00:00Z');
+    const startDate = new Date('2024-04-27T00:00:00Z');
     // Calculate the difference between the current time and the start date
     const [countdown, setCountdown] = useState(startDate - Date.now());
 
