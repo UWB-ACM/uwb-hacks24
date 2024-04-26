@@ -32,141 +32,161 @@ function Schedule() {
     // Define your schedule data
     const scheduleData = [
         {
-            day: "Friday",
-            theme: "Fandom Day!",
-            dressCode: "Wear clothes that reflect your passions to find like-minded teammates.",
-            events: [
+            "day": "Friday",
+            "theme": "Fandom Day!",
+            "dressCode": "Wear clothes that reflect your passions to find like-minded teammates.",
+            "events": [
                 {
-                    time: "10:00am - 11:55am",
-                    activity: "Team formation / BizAI Networking",
-                    location: "ARC Overlook"
+                    "time": "10:00am - 11:45am",
+                    "activity": "Team formation / BizAI Networking",
+                    "location": "ARC Overlook"
                 },
                 {
-                    time: "12:00pm - 1:00pm",
-                    activity: "Lunch, Opening Ceremony",
-                    location: "ARC Overlook"
+                    "time": "11:45am - 12:00pm",
+                    "activity": "Lunch/Sandwiches",
+                    "location": "ARC Overlook"
                 },
                 {
-                    time: "1:30pm - 2:30pm",
-                    activity: "Guest Speaker: WiCyS Basma Basem",
-                    location: "ARC Overlook"
+                    "time": "12:00pm - 1:00pm",
+                    "activity": "Opening Ceremony, Sponsor Introductions",
+                    "speakers": ["Heba Ramzy", "Sai Bathina", "Erika Odmark"],
+                    "location": "ARC Overlook"
                 },
                 {
-                    time: "3:00pm - 4:00pm",
-                    activity: "Rotating Workshop",
-                    location: "Various Locations"
+                    "time": "1:30pm - 2:30pm",
+                    "activity": "Guest Speaker: WiCyS - Basma Basem",
+                    "topic": "Safeguarding Tomorrow: The Evolution of Cybersecurity through AI Automation",
+                    "location": "ARC Overlook"
                 },
                 {
-                    time: "4:00pm - 6:00pm",
-                    activity: "In-Person Work Time",
-                    location: "ARC Overlook"
+                    "time": "3:00pm - 4:00pm",
+                    "activity": "Rotating Workshops",
+                    "details": "See details below",
+                    "location": "Discovery Hall"
                 },
                 {
-                    time: "6:00pm - 7:00pm",
-                    activity: "Live Music (Background)",
-                    location: "ARC Overlook"
+                    "time": "4:00pm - 6:00pm",
+                    "activity": "In-Person Work Time",
+                    "location": "ARC Overlook"
                 },
                 {
-                    time: "7:00pm - 9:00pm",
-                    activity: "In-Person Work Time",
-                    location: "ARC Overlook"
+                    "time": "6:00pm - 7:00pm",
+                    "activity": "Live Music (Background): Developers of Sound",
+                    "location": "ARC Overlook"
                 },
                 {
-                    time: "9:00pm",
-                    activity: "Clean Up",
-                    location: "ARC Overlook"
+                    "time": "7:00pm - 9:00pm",
+                    "activity": "In-Person Work Time",
+                    "location": "ARC Overlook"
+                },
+                {
+                    "time": "9:00pm",
+                    "activity": "Clean Up",
+                    "location": "ARC Overlook"
                 }
             ]
         },
         {
-            day: "Saturday",
-            theme: "Husky Spirit Wear Day!",
-            dressCode: "Wear purple and gold to show your Husky spirit.",
-            events: [
+            "day": "Saturday",
+            "date": "4/27",
+            "theme": "Husky Spirit Wear Day!",
+            "dressCode": "Wear purple and gold to show your Husky spirit.",
+            "events": [
                 {
-                    time: "10:00am - 12:00pm",
-                    activity: "In-Person Work Time",
-                    location: "ARC Overlook"
+                    "time": "10:00am - 11:30am",
+                    "activity": "In-Person Work Time",
+                    "location": "ARC Overlook"
                 },
                 {
-                    time: "12:00pm - 1:00pm",
-                    activity: "Lunch/Pizza, Guest Speaker: Tripti Sethi - Data & AI",
-                    location: "ARC Overlook"
+                    "time": "11:30am - 12:00pm",
+                    "activity": "Lunch/Pizza",
+                    "location": "ARC Overlook"
                 },
                 {
-                    time: "1:00pm - 2:00pm",
-                    activity: "Guest Speaker: WiCyS",
-                    location: "ARC Overlook"
+                    "time": "12:00pm - 1:00pm",
+                    "activity": "Guest Speaker: Avanade",
+                    "speaker": "Tripti Sethi - Making AI Relevant to Today's Need for All",
+                    "location": "ARC Overlook"
                 },
                 {
-                    time: "2:00pm - 4:00pm",
-                    activity: "Rotating Workshops",
-                    location: "Various Locations"
+                    "time": "1:00pm - 2:00pm",
+                    "activity": "Guest Speaker: Microsoft",
+                    "speaker": "Tina Zhang-Powell - A Roadmap to Cybersecurity",
+                    "location": "ARC Overlook"
                 },
                 {
-                    time: "4:00pm - 9:00pm",
-                    activity: "In-Person Work Time",
-                    location: "ARC Overlook"
+                    "time": "2:00pm - 4:00pm",
+                    "activity": "Rotating Workshops",
+                    "details": "See details below",
+                    "location": "Discovery Hall"
                 },
                 {
-                    time: "9:00pm",
-                    activity: "Clean Up",
-                    location: "ARC Overlook"
+                    "time": "4:00pm - 9:00pm",
+                    "activity": "In-Person Work Time",
+                    "location": "ARC Overlook"
+                },
+                {
+                    "time": "9:00pm",
+                    "activity": "Clean Up",
+                    "location": "ARC Overlook"
                 }
             ]
         },
         {
-            day: "Sunday",
-            theme: "Professional Attire Day!",
-            dressCode: "Wear professional or business casual clothes for your pitch/demo in front of the judges.",
-            events: [
+            "day": "Sunday",
+            "theme": "Professional Attire Day!",
+            "dressCode": "Wear professional or business casual clothes for your pitch/demo in front of the judges.",
+            "events": [
                 {
-                    time: "10:00am",
-                    activity: "Student Favorite Voting Opens",
-                    location: "ARC Overlook"
+                    "time": "10:00am",
+                    "activity": "Student Favorite Voting Opens",
+                    "location": "ARC Overlook"
                 },
                 {
-                    time: "10:30am - 11:00am",
-                    activity: "Closing Ceremony, Introducing Judges, Serving Donuts",
-                    location: "ARC Overlook"
-                  },
-                  {
-                    time: "11:00am - 1:00pm",
-                    activity: "First Round of Judging (See details below)",
-                    location: "ARC Overlook"
-                  },
-                  {
-                    time: "1:00pm - 1:30pm",
-                    activity: "Judges Deliberate & Pick Top 8 Teams / Break for Participants",
-                    location: "ARC Overlook"
-                  },
-                  {
-                    time: "1:30pm",
-                    activity: "Student Favorite Voting Closes",
-                    location: "ARC Overlook"
-                  },
-                  {
-                    time: "1:30pm - 2:30pm",
-                    activity: "Top 8 Teams Present",
-                    location: "ARC Overlook"
-                  },
-                  {
-                    time: "2:30pm - 3:00pm",
-                    activity: "The Grand Jury Determines Grand Prize Winner",
-                    location: "ARC Overlook"
-                  },
-                  {
-                    time: "3:00pm - 3:30pm",
-                    activity: "Winners Announced - Wrap Up",
-                    location: "ARC Overlook"
-                  },
-                  {
-                    time: "3:30pm - 4:00pm",
-                    activity: "Clean Up",
-                    location: "ARC Overlook"
-                  }
+                    "time": "10:30am - 11:00am",
+                    "activity": "Closing Ceremony, Introducing Judges, Serving Donuts",
+                    "sponsorReps": ["Heba Ramzy", "Angela Ferro Capera"],
+                    "location": "ARC Overlook"
+                },
+                {
+                    "time": "11:00am - 1:00pm",
+                    "activity": "First Round of Judging",
+                    "details": "See details below",
+                    "location": "ARC Overlook"
+                },
+                {
+                    "time": "1:00pm - 1:30pm",
+                    "activity": "Judges Deliberate & Pick Top 8 Teams / Break for Participants",
+                    "location": "ARC Overlook"
+                },
+                {
+                    "time": "1:30pm",
+                    "activity": "Student Favorite Voting Closes",
+                    "location": "ARC Overlook"
+                },
+                {
+                    "time": "1:30pm - 2:30pm",
+                    "activity": "Top 8 Teams Present",
+                    "location": "ARC Overlook"
+                },
+                {
+                    "time": "2:30pm - 3:00pm",
+                    "activity": "The Grand Jury Determines Grand Prize Winner",
+                    "location": "ARC Overlook"
+                },
+                {
+                    "time": "3:00pm - 3:30pm",
+                    "activity": "Winners Announced - Wrap Up",
+                    "location": "ARC Overlook"
+                },
+                {
+                    "time": "3:30pm - 4:00pm",
+                    "activity": "Clean Up",
+                    "location": "ARC Overlook"
+                }
             ]
         }
+        
     ];
 
     // Workshops for Friday and Saturday would need to be included in the 'events' array where the 'activity' specifies 'Rotating Workshops'.
