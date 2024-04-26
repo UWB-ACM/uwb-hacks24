@@ -1,9 +1,5 @@
 import React from 'react';
 import './Home.css';
-import BioTech from "./media/biotech.png"
-import Business from "./media/business.png"
-import Education from "./media/education.png"
-import Entertainment from "./media/entertainment.png"
 import StackedCards from './TrackCard';
 
 
@@ -17,7 +13,7 @@ function Tracks() {
                 </div>
 
                 <div className="font-stacker text-pink flex flex-col items-center justify-center sm:flex-row sm:flex-wrap overflow-hidden pb-36">
-                    <StackedCards cardTitle="Soon..." backgroundImage={BioTech}>Tracks to be released soon. Stay tuned.</StackedCards>
+                    <StackedCards cardTitle="Soon..." backgroundImage={null}>Tracks to be released soon. Stay tuned.</StackedCards>
                 </div>
             </div>
         </>
